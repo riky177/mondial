@@ -1,1 +1,55 @@
 @import 'tailwindcss';
+
+/* Font face declarations */
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/fonts/trajan-pro/TrajanPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/fonts/trajan-pro/TrajanPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Tailwind v4 theme configuration */
+@theme {
+  --color-primary: #cba64d;
+}
+
+/* Apply the font globally */
+html,
+body {
+  font-family: 'Trajan Pro';
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+}
+
+@layer components {
+  .underline-hover {
+    position: relative;
+    display: inline-block;
+  }
+
+  .underline-hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .underline-hover:hover::after {
+    transform: scaleX(1);
+  }
+}
