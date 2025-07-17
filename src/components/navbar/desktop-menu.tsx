@@ -33,7 +33,7 @@ const Menu = () => {
         ))}
       </div>
       <div
-        className={`absolute top-[20px] left-0 z-10 flex w-full bg-white px-[60px] pt-4 transition-opacity duration-300 ${
+        className={`absolute top-8 left-0 z-10 flex w-full bg-white px-[60px] pt-4 transition-opacity duration-300 ${
           activeMenuTitle && isVisible
             ? 'opacity-100'
             : 'pointer-events-none opacity-0'
@@ -50,7 +50,7 @@ const Menu = () => {
                   <a
                     key={detail.title}
                     href={detail.href}
-                    className="underline-hover fitc block w-fit px-2 py-2 text-xs text-gray-600"
+                    className="underline-hover fitc text-secondary block w-fit px-2 py-2 text-xs"
                   >
                     {detail.title}
                   </a>

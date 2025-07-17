@@ -20,7 +20,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="text-gray-500">
+    <div className="text-secondary">
       <div className="flex w-full items-center justify-between p-4">
         <button
           onClick={toggleMenu}

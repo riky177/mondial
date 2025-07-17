@@ -45,7 +45,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
                     <a
                       key={detail.title}
                       href={detail.href}
-                      className="hover:text-primary block py-2 pl-4 text-sm text-gray-600"
+                      className="hover:text-primary text-secondary block py-2 pl-4 text-sm"
                       onClick={onItemClick}
                     >
                       {detail.title}

@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'Red Hat Text';
+  src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+}
+
 /* Font face declarations */
 @font-face {
   font-family: 'Trajan Pro';
@@ -20,12 +25,13 @@
 /* Tailwind v4 theme configuration */
 @theme {
   --color-primary: #cba64d;
+  --color-secondary: #796e69;
 }
 
 /* Apply the font globally */
 html,
 body {
-  font-family: 'Trajan Pro';
+  font-family: 'Trajan Pro', sans-serif;
   font-size: 12px;
   text-rendering: optimizeLegibility;
 }
@@ -51,5 +57,11 @@ body {
 
   .underline-hover:hover::after {
     transform: scaleX(1);
+  }
+}
+
+@layer utilities {
+  .container {
+    max-width: 1168px;
   }
 }
