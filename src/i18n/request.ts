@@ -58,7 +58,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
-  // Ensure locale is a string
   const resolvedLocale: string = locale as string;
 
   const messages = await loadMessages(resolvedLocale);

@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "highJewelry": "HIGH JEWELRY",
+    "jewelry": "JEWELRY",
+    "engagementBridal": "ENGAGEMENT & BRIDAL",
+    "giftIdeas": "GIFT IDEAS",
+    "allAboutDiamonds": "All About Diamonds",
+    "stories": "STORIES",
+    "subMenu": {
+      "preciousStone": "Precious Stone & Fancy Diamond",
+      "brandedDiamond": "Branded Diamond & Pearl",
+      "preciousStoneMenu": "PRECIOUS STONE",
+      "fancyDesign": "FANCY DESIGN",
+      "fancyShapeDiamond": "FANCY SHAPE DIAMOND",
+      "fancyColorDiamond": "FANCY COLOR DIAMOND",
+      "macUltimate": "MAC ULTIMATE",
+      "berliantRose": "BERLIANT ROSE",
+      "firemark": "FIREMARK"
+    }
+  }
+}

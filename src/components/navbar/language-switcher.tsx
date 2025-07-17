@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
       >
         ID
       </button>
-      <div className="mx-3 h-4 w-px bg-gray-300"></div>
+      <div className="mx-2 h-4 w-px bg-gray-300"></div>
       <button
         onClick={() => handleLanguageChange('en')}
         className={`cursor-pointer font-bold transition-colors ${

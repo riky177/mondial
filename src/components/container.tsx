@@ -2,7 +2,7 @@ import React from 'react';
 
 import Footer from './footer';
 import Navbar from './navbar';
-import WhySection from './why-section';
+import SectionWhy from './section-why';
 
 type ContainerProps = {
   children: React.ReactNode;
@@ -13,7 +13,7 @@ const Container = ({ children }: ContainerProps) => {
     <div>
       <Navbar />
       {children}
-      <WhySection />
+      <SectionWhy />
       <Footer />
     </div>
   );

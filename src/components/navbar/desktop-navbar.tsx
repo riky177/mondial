@@ -10,15 +10,15 @@ const DesktopNavbar = () => {
   const t = useTranslations('common');
   return (
     <div className="flex w-full flex-col items-center">
-      <div className="text-secondary container w-full px-[15px] pt-1">
+      <div className="text-secondary container px-[15px] pt-1">
         <div className="flex w-full items-center justify-between">
           <div className="flex items-center space-x-3">
             <LanguageSwitcher />
             <CiLocationOn color="var(--color-primary)" size={16} />
-            <div className="border-primary flex border-b-1 border-solid pt-3.5">
+            <div className="border-primary flex border-b-[1px] border-solid pt-3.5">
               <CiSearch color="var(--color-primary)" size={16} />
               <input
-                className="text-secondary w-[125px] pr-5 pb-2 pl-3 focus:outline-none"
+                className="text-secondary w-[125px] pb-2 pl-3 pr-5 focus:outline-none"
                 placeholder={`${t('search')}...`}
               ></input>
             </div>

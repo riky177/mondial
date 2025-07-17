@@ -2,5 +2,24 @@
   "title": "Luxury Diamond Jewellery, Accessories and Gifts - Mondial",
   "signin": "SIGN IN",
   "signup": "SIGN UP",
-  "search": "Search"
+  "search": "Search",
+  "whySection": {
+    "title": "BEYOND MONDIAL",
+    "bookAppointment": "BOOK APPOINTMENT",
+    "diamondConsultation": "DIAMOND CONSULTATION",
+    "shippingReturnPolicy": "SHIPPING RETURN POLICY",
+    "faq": "FREQUENTLY ASKED QUESTIONS"
+  },
+  "footer": {
+    "loyaltyProgram": "JOIN OUR LUXURY LOYALTY PROGRAM",
+    "customerService": "CUSTOMER SERVICE",
+    "information": "INFORMATION",
+    "followUs": "FOLLOW US",
+    "contactUs": "CONTACT US",
+    "faq": "FREQUENTLY ASKED",
+    "termsConditions": "TERMS AND CONDITIONS",
+    "storeLocation": "STORE LOCATION",
+    "stories": "STORIES",
+    "shippingReturnPolicy": "SHIPPING RETURN POLICY"
+  }
 }

@@ -57,13 +57,13 @@ const MobileNavbar = () => {
                 <MobileMenu onItemClick={() => setIsMenuOpen(false)} />
               </div>
             </div>
-            <div className="flex items-center border-y-1 border-gray-200 px-8 py-5">
+            <div className="flex items-center border-y-[1px] border-gray-200 px-8 py-5">
               <IoPersonOutline size={18} />
               <span className="ml-4">
                 {t('signin')} / {t('signup')}
               </span>
             </div>
-            <div className="px-8 py-12">
+            <div className="px-8 py-8">
               <LanguageSwitcher />
             </div>
           </div>

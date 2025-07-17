@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "highJewelry": "PERHIASAN TINGGI",
+    "jewelry": "PERHIASAN",
+    "engagementBridal": "PERTUNANGAN & PERNIKAHAN",
+    "giftIdeas": "IDE HADIAH",
+    "allAboutDiamonds": "Semua Tentang Berlian",
+    "stories": "CERITA",
+    "subMenu": {
+      "preciousStone": "Batu Mulia & Berlian Mewah",
+      "brandedDiamond": "Berlian Bermerek & Mutiara",
+      "preciousStoneMenu": "BATU MULIA",
+      "fancyDesign": "DESAIN MEWAH",
+      "fancyShapeDiamond": "BERLIAN BENTUK MEWAH",
+      "fancyColorDiamond": "BERLIAN WARNA MEWAH",
+      "macUltimate": "MAC ULTIMATE",
+      "berliantRose": "BERLIANT ROSE",
+      "firemark": "FIREMARK"
+    }
+  }
+}

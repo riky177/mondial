@@ -1,37 +1,39 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 import { AiOutlineFacebook } from 'react-icons/ai';
 import { FaInstagram } from 'react-icons/fa';
-import { PiTiktokLogo, PiYoutubeLogoLight } from 'react-icons/pi';
+import { PiTiktokLogo, PiYoutubeLogo } from 'react-icons/pi';
 
 type FooterMenuItem = {
   title: string;
   href: string;
 };
 
-const CSMENU: FooterMenuItem[] = [
-  { title: 'CONTACT US', href: '/contacts' },
-  { title: 'FREQUENTLY ASKED', href: '/faq' },
-  { title: 'TERMS AND CONDITIONS', href: '/terms' },
-];
-
-const INFOMENU: FooterMenuItem[] = [
-  { title: 'STORE LOCATION', href: '/stores' },
-  { title: 'STORIES', href: '/stories/all' },
-  {
-    title: 'SHIPPING RETURN POLICY',
-    href: 'https://www.linkedin.com/company/centralmegakencana/',
-  },
-];
-
 const Footer = () => {
+  const t = useTranslations('common');
+
+  const CSMENU: FooterMenuItem[] = [
+    { title: t('footer.contactUs'), href: '/contacts' },
+    { title: t('footer.faq'), href: '/faq' },
+    { title: t('footer.termsConditions'), href: '/terms' },
+  ];
+
+  const INFOMENU: FooterMenuItem[] = [
+    { title: t('footer.storeLocation'), href: '/stores' },
+    { title: t('footer.stories'), href: '/stories/all' },
+    {
+      title: t('footer.shippingReturnPolicy'),
+      href: 'https://www.linkedin.com/company/centralmegakencana/',
+    },
+  ];
   return (
     <footer className="flex w-full flex-col items-center md:pt-10">
-      <div className="container flex flex-col justify-between space-y-10 space-x-4 p-7 md:flex-row md:px-12">
+      <div className="container flex flex-col justify-between p-7 md:flex-row md:px-12 md:pt-0">
         <div className="w-full md:max-w-[42%]">
           <h5 className="mb-3 text-xl font-bold md:mb-8">
-            JOIN OUR LUXURY LOYALTY PROGRAM
+            {t('footer.loyaltyProgram')}
           </h5>
 
           <Image
@@ -69,26 +71,30 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="flex flex-1 justify-between space-x-4">
+        <div className="mt-4 flex flex-1 justify-between space-x-4 md:mt-0">
           <div>
-            <h5 className="mb-3 text-xl font-bold md:mb-8">CUSTOMER SERVICE</h5>
+            <h5 className="mb-3 text-xl font-bold md:mb-8">
+              {t('footer.customerService')}
+            </h5>
             {CSMENU.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="text-secondary text-md block w-fit py-3 md:text-[13px]"
+                className="font-red-hat text-md block w-fit pb-5 text-gray-400 md:max-w-[210px] md:text-[13px]"
               >
                 {item.title}
               </Link>
             ))}
           </div>
           <div>
-            <h5 className="mb-3 text-xl font-bold md:mb-8">INFORMATION</h5>
+            <h5 className="mb-3 text-xl font-bold md:mb-8">
+              {t('footer.information')}
+            </h5>
             {INFOMENU.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="fitc text-secondary text-md block w-fit py-3 md:text-[13px]"
+                className="font-red-hat text-md block w-fit pb-5 text-gray-400 md:max-w-[210px] md:text-[13px]"
                 target={item.href.startsWith('http') ? '_blank' : undefined}
               >
                 {item.title}
@@ -96,7 +102,9 @@ const Footer = () => {
             ))}
           </div>
           <div>
-            <h5 className="mb-3 text-xl font-bold md:mb-8">FOLLOW US</h5>
+            <h5 className="mb-3 text-xl font-bold md:mb-8">
+              {t('footer.followUs')}
+            </h5>
             <div className="flex space-x-4">
               <Link
                 href="https://www.instagram.com/centralmegakencana/"
@@ -133,20 +141,18 @@ const Footer = () => {
                 target="_blank"
               >
                 <div className="md:hidden">
-                  <PiYoutubeLogoLight color="var(--color-primary)" size={17} />
+                  <PiYoutubeLogo color="var(--color-primary)" size={17} />
                 </div>
                 <div className="hidden md:block">
-                  <PiTiktokLogo color="var(--color-primary)" size={24} />
+                  <PiYoutubeLogo color="var(--color-primary)" size={24} />
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="border-primary w-full border-t-1 border-solid p-7 text-center md:px-12">
-        <p className="text-primary text-xl">
-          © {new Date().getFullYear()} Mondial
-        </p>
+      <div className="border-primary w-full border-t-[1px] border-solid p-7 text-center md:px-12">
+        <p className="text-primary text-xl">{`© ${new Date().getFullYear()} Mondial`}</p>
       </div>
     </footer>
   );

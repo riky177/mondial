@@ -2,5 +2,24 @@
   "title": "Perhiasan Berlian Mewah, Aksesoris, dan Hadiah - Mondial",
   "signin": "MASUK",
   "signup": "DAFTAR",
-  "search": "Cari"
+  "search": "Cari",
+  "whySection": {
+    "title": "BEYOND MONDIAL",
+    "bookAppointment": "BUAT JANJI TEMU",
+    "diamondConsultation": "KONSULTASI BERLIAN",
+    "shippingReturnPolicy": "KEBIJAKAN PENGIRIMAN & PENGEMBALIAN",
+    "faq": "PERTANYAAN YANG SERING DIAJUKAN"
+  },
+  "footer": {
+    "loyaltyProgram": "BERGABUNGLAH DENGAN PROGRAM LOYALITAS MEWAH KAMI",
+    "customerService": "LAYANAN PELANGGAN",
+    "information": "INFORMASI",
+    "followUs": "IKUTI KAMI",
+    "contactUs": "HUBUNGI KAMI",
+    "faq": "PERTANYAAN UMUM",
+    "termsConditions": "SYARAT DAN KETENTUAN",
+    "storeLocation": "LOKASI TOKO",
+    "stories": "CERITA",
+    "shippingReturnPolicy": "KEBIJAKAN PENGIRIMAN & PENGEMBALIAN"
+  }
 }
