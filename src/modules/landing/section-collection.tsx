@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import Slider, { Settings } from 'react-slick';
@@ -35,6 +36,8 @@ const IMAGE = [
 ];
 
 const SectionCollection = () => {
+  const t = useTranslations('landing');
+
   const CustomPrevArrow = (props: any) => {
     const { onClick } = props;
     return (
@@ -95,13 +98,13 @@ const SectionCollection = () => {
     <div className="flex w-full items-center justify-center overflow-hidden pt-20">
       <div className="container overflow-hidden">
         <h2 className="mb-5 text-center text-2xl font-bold">
-          Step into the world of MONDIAL
+          {t('collectionTitle')}
         </h2>
         <Link
           href="https://www.instagram.com/mondial"
           className="block text-center font-red-hat text-[14px] text-gray-400"
         >
-          Follow @mondial for the latest updates
+          {t('collectionSubtitle')}
         </Link>
         <Slider
           {...settings}

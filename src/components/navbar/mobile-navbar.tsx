@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useSession } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
@@ -12,6 +13,7 @@ import LanguageSwitcher from './language-switcher';
 import MobileMenu from './mobile-menu';
 
 const MobileNavbar = () => {
+  const session = useSession();
   const t = useTranslations('common');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -20,7 +22,7 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="text-secondary">
+    <div className="border-b-[1px] border-solid border-b-gray-200 text-secondary">
       <div className="flex w-full items-center justify-between p-4">
         <button
           onClick={toggleMenu}
@@ -59,8 +61,16 @@ const MobileNavbar = () => {
             </div>
             <div className="flex items-center border-y-[1px] border-gray-200 px-8 py-5">
               <IoPersonOutline size={18} />
-              <span className="ml-4">
-                {t('signin')} / {t('signup')}
+              <span className="ml-4" onClick={toggleMenu}>
+                {session.status === 'authenticated' ? (
+                  <Link href="/accounts/profile">
+                    <span>MY ACCOUNT</span>
+                  </Link>
+                ) : (
+                  <Link href="/auth/login">
+                    {t('signin')} / {t('signup')}
+                  </Link>
+                )}
               </span>
             </div>
             <div className="px-8 py-8">

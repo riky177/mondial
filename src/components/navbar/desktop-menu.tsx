@@ -78,7 +78,7 @@ const Menu = () => {
   };
   return (
     <div className="relative mt-8 w-full" onMouseLeave={handleMouseLeave}>
-      <div className="border-b-1 flex w-full items-center justify-center border-solid border-b-gray-200 pb-2.5">
+      <div className="flex w-full items-center justify-center border-b-[1px] border-solid border-b-gray-200 pb-2.5">
         {MENU.map((menu) => (
           <div
             key={menu.title}
@@ -107,7 +107,7 @@ const Menu = () => {
                   <a
                     key={detail.title}
                     href={detail.href}
-                    className="underline-hover fitc text-secondary block w-fit px-2 py-2 text-xs"
+                    className="underline-hover fitc block w-fit px-2 py-2 text-xs text-secondary"
                   >
                     {getTranslatedDetailTitle(detail.title)}
                   </a>

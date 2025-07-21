@@ -26,6 +26,7 @@ const config: Config = {
       colors: {
         primary: '#cba64d',
         secondary: '#796e69',
+        tertiary: '#8E8F88',
       },
       fontFamily: {
         trajan: ['Trajan Pro', 'sans-serif'],

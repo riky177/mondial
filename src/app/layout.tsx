@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import type { Metadata } from 'next';
 
+import Providers from '@/components/providers';
+
 export const metadata: Metadata = {
   title: 'Luxury Diamond Jewellery, Accessories and Gifts - Mondial',
   description:
@@ -17,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

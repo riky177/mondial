@@ -1,0 +1,19 @@
+{
+  "login": {
+    "title": "SIGN IN",
+    "subtitle": "Input phone number to your Mondial Account",
+    "phoneLabel": "Telepon Number",
+    "phonePlaceholder": "+62870123456789 (Example)",
+    "signInButton": "Sign In",
+    "sendingButton": "Sending..."
+  },
+  "otp": {
+    "title": "VERIFICATION",
+    "subtitle": "Enter the OTP code that has been sent to ***",
+    "otpPlaceholder": "Enter OTP Code",
+    "continueButton": "Continue",
+    "verifyingButton": "Verifying...",
+    "resendCountdown": "Resend OTP in {seconds} seconds",
+    "resendButton": "Resend OTP"
+  }
+}

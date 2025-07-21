@@ -1,0 +1,19 @@
+{
+  "login": {
+    "title": "MASUK",
+    "subtitle": "Masukkan nomor telepon ke Akun Mondial Anda",
+    "phoneLabel": "Nomor Telepon",
+    "phonePlaceholder": "+62870123456789 (Contoh)",
+    "signInButton": "Masuk",
+    "sendingButton": "Mengirim..."
+  },
+  "otp": {
+    "title": "VERIFIKASI",
+    "subtitle": "Masukkan kode OTP yang telah dikirim ke ***",
+    "otpPlaceholder": "Masukkan Kode OTP",
+    "continueButton": "Lanjutkan",
+    "verifyingButton": "Memverifikasi...",
+    "resendCountdown": "Kirim ulang OTP dalam {seconds} detik",
+    "resendButton": "Kirim ulang OTP"
+  }
+}
