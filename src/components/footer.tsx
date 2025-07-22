@@ -71,84 +71,109 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="mt-4 flex flex-1 justify-between space-x-4 md:mt-0">
-          <div>
-            <h5 className="mb-3 text-[13px] font-bold md:mb-8 md:text-base">
-              {t('footer.customerService')}
-            </h5>
-            {CSMENU.map((item) => (
-              <Link
-                key={item.title}
-                href={item.href}
-                className="block w-fit pb-5 font-red-hat text-xs text-gray-400 md:max-w-[210px] md:text-[13px]"
-              >
-                {item.title}
-              </Link>
-            ))}
-          </div>
-          <div>
-            <h5 className="mb-3 text-[13px] font-bold md:mb-8">
-              {t('footer.information')}
-            </h5>
-            {INFOMENU.map((item) => (
-              <Link
-                key={item.title}
-                href={item.href}
-                className="block w-fit pb-5 font-red-hat text-xs text-gray-400 md:max-w-[210px] md:text-[13px]"
-                target={item.href.startsWith('http') ? '_blank' : undefined}
-              >
-                {item.title}
-              </Link>
-            ))}
-          </div>
-          <div>
-            <h5 className="mb-3 text-[13px] font-bold md:mb-8">
-              {t('footer.followUs')}
-            </h5>
-            <div className="flex space-x-4">
-              <Link
-                href="https://www.instagram.com/centralmegakencana/"
-                target="_blank"
-              >
-                <div className="md:hidden">
-                  <FaInstagram color="var(--color-primary)" size={17} />
-                </div>
-                <div className="hidden md:block">
-                  <FaInstagram color="var(--color-primary)" size={24} />
-                </div>
-              </Link>
-              <Link href="https://www.facebook.com/Mondial" target="_blank">
-                <div className="md:hidden">
-                  <AiOutlineFacebook color="var(--color-primary)" size={17} />
-                </div>
-                <div className="hidden md:block">
-                  <AiOutlineFacebook color="var(--color-primary)" size={24} />
-                </div>
-              </Link>
-              <Link
-                href="https://www.tiktok.com/@mondialjeweler?_t=8mUrKzaspia&_r=1"
-                target="_blank"
-              >
-                <div className="md:hidden">
-                  <PiTiktokLogo color="var(--color-primary)" size={17} />
-                </div>
-                <div className="hidden md:block">
-                  <PiTiktokLogo color="var(--color-primary)" size={24} />
-                </div>
-              </Link>
-              <Link
-                href="https://youtube.com/@mondial_?si=0cnm50UZYwDTHjgQ"
-                target="_blank"
-              >
-                <div className="md:hidden">
-                  <PiYoutubeLogo color="var(--color-primary)" size={17} />
-                </div>
-                <div className="hidden md:block">
-                  <PiYoutubeLogo color="var(--color-primary)" size={24} />
-                </div>
-              </Link>
-            </div>
-          </div>
+        <div className="mt-4 flex-1 md:mt-0">
+          <table className="w-full table-auto">
+            <thead>
+              <tr>
+                <th className="pb-3 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
+                  {t('footer.customerService')}
+                </th>
+                <th className="pb-3 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
+                  {t('footer.information')}
+                </th>
+                <th className="pb-3 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
+                  {t('footer.followUs')}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="align-top">
+                <td className="pr-4 align-top">
+                  {CSMENU.map((item) => (
+                    <Link
+                      key={item.title}
+                      href={item.href}
+                      className="block w-fit pb-5 font-red-hat text-xs text-gray-400 md:max-w-[210px] md:text-[13px]"
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </td>
+                <td className="pr-4 align-top">
+                  {INFOMENU.map((item) => (
+                    <Link
+                      key={item.title}
+                      href={item.href}
+                      className="block w-fit pb-5 font-red-hat text-xs text-gray-400 md:max-w-[210px] md:text-[13px]"
+                      target={
+                        item.href.startsWith('http') ? '_blank' : undefined
+                      }
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </td>
+                <td className="align-top">
+                  <div className="flex gap-4 md:flex md:gap-0 md:space-x-4">
+                    <Link
+                      href="https://www.instagram.com/centralmegakencana/"
+                      target="_blank"
+                      className="flex justify-center md:justify-start"
+                    >
+                      <div className="md:hidden">
+                        <FaInstagram color="var(--color-primary)" size={17} />
+                      </div>
+                      <div className="hidden md:block">
+                        <FaInstagram color="var(--color-primary)" size={24} />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://www.facebook.com/Mondial"
+                      target="_blank"
+                      className="flex justify-center md:justify-start"
+                    >
+                      <div className="md:hidden">
+                        <AiOutlineFacebook
+                          color="var(--color-primary)"
+                          size={17}
+                        />
+                      </div>
+                      <div className="hidden md:block">
+                        <AiOutlineFacebook
+                          color="var(--color-primary)"
+                          size={24}
+                        />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://www.tiktok.com/@mondialjeweler?_t=8mUrKzaspia&_r=1"
+                      target="_blank"
+                      className="flex justify-center md:justify-start"
+                    >
+                      <div className="md:hidden">
+                        <PiTiktokLogo color="var(--color-primary)" size={17} />
+                      </div>
+                      <div className="hidden md:block">
+                        <PiTiktokLogo color="var(--color-primary)" size={24} />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://youtube.com/@mondial_?si=0cnm50UZYwDTHjgQ"
+                      target="_blank"
+                      className="flex justify-center md:justify-start"
+                    >
+                      <div className="md:hidden">
+                        <PiYoutubeLogo color="var(--color-primary)" size={17} />
+                      </div>
+                      <div className="hidden md:block">
+                        <PiYoutubeLogo color="var(--color-primary)" size={24} />
+                      </div>
+                    </Link>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div className="w-full border-t-[1px] border-solid border-primary p-5 text-center md:px-12">
