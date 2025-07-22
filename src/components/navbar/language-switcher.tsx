@@ -1,34 +1,28 @@
 'use client';
 
-import { Locale } from '@i18n/config';
-import { usePathname, useRouter } from '@i18n/routing';
-import { useLocale } from 'next-intl';
+import { useLanguageSwitcher } from '@hooks/useLanguageSwitcher';
 
 export default function LanguageSwitcher() {
-  const router = useRouter();
-  const pathname = usePathname();
-  const currentLocale = useLocale();
-
-  const handleLanguageChange = (newLocale: Locale) => {
-    router.push(pathname, { locale: newLocale });
-  };
+  const { currentLocale, isPending, switchLanguage } = useLanguageSwitcher();
 
   return (
     <div className="font-trajan-bold flex items-center">
       <button
-        onClick={() => handleLanguageChange('id')}
+        onClick={() => switchLanguage('id')}
+        disabled={isPending}
         className={`cursor-pointer text-xs font-bold transition-colors ${
           currentLocale === 'id' ? 'text-primary' : ''
-        }`}
+        } ${isPending ? 'cursor-not-allowed opacity-50' : ''}`}
       >
         ID
       </button>
       <div className="mx-2 h-4 w-px bg-gray-300"></div>
       <button
-        onClick={() => handleLanguageChange('en')}
+        onClick={() => switchLanguage('en')}
+        disabled={isPending}
         className={`cursor-pointer text-xs font-bold transition-colors ${
           currentLocale === 'en' ? 'text-primary' : ''
-        }`}
+        } ${isPending ? 'cursor-not-allowed opacity-50' : ''}`}
       >
         EN
       </button>

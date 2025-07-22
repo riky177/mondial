@@ -7,6 +7,14 @@ import { routing } from './i18n/routing';
 const intlMiddleware = createMiddleware(routing);
 
 export default async function middleware(request: NextRequest) {
+  // Handle internationalization first
+  const response = intlMiddleware(request);
+
+  // If intl middleware returns a response (redirect), return it immediately
+  if (response) {
+    return response;
+  }
+
   // Check if the request is for an auth page or accounts page
   const { pathname } = request.nextUrl;
   const isAuthPage = pathname.includes('/auth/');
@@ -44,8 +52,7 @@ export default async function middleware(request: NextRequest) {
     }
   }
 
-  // Continue with internationalization middleware
-  return intlMiddleware(request);
+  return NextResponse.next();
 }
 
 export const config = {
