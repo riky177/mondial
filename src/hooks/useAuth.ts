@@ -60,10 +60,16 @@ export const useAuth = () => {
         return false;
       }
 
-      router.push('/');
-      return true;
-    } catch {
-      setError('An error occurred');
+      if (result?.ok) {
+        router.push('/');
+        return true;
+      }
+
+      setError('Authentication failed');
+      return false;
+    } catch (error) {
+      console.error('OTP verification error:', error);
+      setError('An error occurred during verification');
       return false;
     } finally {
       setIsLoading(false);

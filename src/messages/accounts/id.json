@@ -1,0 +1,31 @@
+{
+  "personalInformation": {
+    "title": "Informasi Pribadi",
+    "name": "Nama",
+    "emailAddress": "Alamat Email",
+    "mobileNumber": "Nomor Handphone",
+    "birthday": "Tanggal Lahir",
+    "address": "Alamat",
+    "district": "Kabupaten",
+    "gender": "Jenis Kelamin",
+    "genderOptions": {
+      "male": "Laki-laki",
+      "female": "Perempuan"
+    }
+  },
+  "profile": {
+    "title": "Profil"
+  },
+  "wishlist": {
+    "title": "DAFTAR KEINGINAN",
+    "empty": "Daftar Keinginan Anda kosong."
+  },
+  "sideProfile": {
+    "hi": "HAI",
+    "member": "Anggota",
+    "pts": "Poin",
+    "personalInformation": "INFORMASI PRIBADI",
+    "myWishlist": "DAFTAR KEINGINAN SAYA",
+    "signOut": "KELUAR"
+  }
+}

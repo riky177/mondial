@@ -5,7 +5,7 @@ declare module 'next-auth' {
     phone?: string;
     name?: string;
     email?: string;
-    birthdate?: Date;
+    birthdate?: string;
     address?: string;
     district?: string;
     point?: number;
@@ -17,7 +17,7 @@ declare module 'next-auth' {
       phone?: string;
       name?: string;
       email?: string;
-      birthdate?: Date;
+      birthdate?: string;
       address?: string;
       district?: string;
       point?: number;
@@ -31,7 +31,7 @@ declare module 'next-auth/jwt' {
     phone?: string;
     name?: string;
     email?: string;
-    birthdate?: Date;
+    birthdate?: string;
     address?: string;
     district?: string;
     point?: number;

@@ -1,0 +1,31 @@
+{
+  "personalInformation": {
+    "title": "Personal Information",
+    "name": "Name",
+    "emailAddress": "Email Address",
+    "mobileNumber": "Mobile Number",
+    "birthday": "Birthday",
+    "address": "Address",
+    "district": "District",
+    "gender": "Gender",
+    "genderOptions": {
+      "male": "Male",
+      "female": "Female"
+    }
+  },
+  "profile": {
+    "title": "Profile"
+  },
+  "wishlist": {
+    "title": "WISHLIST",
+    "empty": "Your Wishlist is empty."
+  },
+  "sideProfile": {
+    "hi": "HI",
+    "member": "Member",
+    "pts": "Pts",
+    "personalInformation": "PERSONAL INFORMATION",
+    "myWishlist": "MY WISHLIST",
+    "signOut": "SIGN OUT"
+  }
+}

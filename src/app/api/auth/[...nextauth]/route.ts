@@ -36,7 +36,7 @@ const handler = NextAuth({
             phone: credentials.phone,
             name: 'User',
             email: `${credentials.phone}@example.com`,
-            birthdate: new Date(),
+            birthdate: new Date().toISOString(),
             address: '123 Main St',
             district: 'Central',
             gender: 'male',

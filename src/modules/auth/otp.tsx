@@ -10,12 +10,19 @@ const OTP = () => {
   const [otp, setOtp] = useState('');
   const [phone, setPhone] = useState('');
   const [countdown, setCountdown] = useState(60);
+  const [mounted, setMounted] = useState(false);
   const { verifyOTP, isLoading, error } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
   const t = useTranslations('auth.otp');
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
     const phoneFromStorage = localStorage.getItem('tempPhone');
 
     if (phoneFromStorage) {
@@ -23,7 +30,7 @@ const OTP = () => {
     } else {
       router.push('/auth/login');
     }
-  }, [searchParams, router]);
+  }, [mounted, searchParams, router]);
 
   useEffect(() => {
     if (countdown > 0) {
@@ -35,9 +42,13 @@ const OTP = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (phone && otp) {
-      const success = await verifyOTP(phone, otp);
-      if (success) {
-        localStorage.removeItem('tempPhone');
+      try {
+        const success = await verifyOTP(phone, otp);
+        if (success) {
+          localStorage.removeItem('tempPhone');
+        }
+      } catch (error) {
+        console.error('Error during OTP verification:', error);
       }
     }
   };
@@ -61,6 +72,8 @@ const OTP = () => {
 
       if (response.ok) {
         setCountdown(60);
+      } else {
+        console.error('Failed to resend OTP');
       }
     } catch (error) {
       console.error('Failed to resend OTP:', error);
@@ -73,6 +86,10 @@ const OTP = () => {
     }
     return phoneNumber;
   };
+
+  if (!mounted) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
