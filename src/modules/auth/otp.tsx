@@ -98,7 +98,7 @@ const OTP = () => {
                 type="text"
                 required
                 maxLength={6}
-                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-3 text-center font-red-hat text-xl tracking-wider placeholder-gray-500 placeholder:text-gray-300 focus:outline-none"
+                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-3 font-red-hat tracking-wider placeholder-gray-500 placeholder:text-gray-300 focus:outline-none"
                 placeholder={t('otpPlaceholder')}
                 value={otp}
                 onChange={handleOtpChange}

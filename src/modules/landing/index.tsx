@@ -18,12 +18,14 @@ const Landing = () => {
           autoPlay
           loop
           muted
+          playsInline
+          webkit-playsinline="true"
           className="mb-20 h-auto w-full object-cover"
         />
-        <h2 className="text-center text-xl font-bold">
+        <h2 className="text-center text-sm font-bold md:text-lg">
           {t('mondialPrecious')}
         </h2>
-        <p className="mb-20 mt-4 text-center underline">
+        <p className="mb-20 mt-4 text-center font-red-hat text-xs underline md:text-sm">
           {t('discoverCollection')}
         </p>
       </Link>
@@ -39,8 +41,12 @@ const Landing = () => {
           }}
           className="mb-20"
         />
-        <h2 className="text-center text-xl font-bold">{t('iSaidMondial')}</h2>
-        <p className="my-4 text-center underline">{t('seeCollection')}</p>
+        <h2 className="text-center text-sm font-bold md:text-lg">
+          {t('iSaidMondial')}
+        </h2>
+        <p className="my-4 text-center font-red-hat text-xs underline md:text-sm">
+          {t('seeCollection')}
+        </p>
       </Link>
       <Link href="/mondial-blue-house" className="w-full">
         <video
@@ -49,6 +55,8 @@ const Landing = () => {
           autoPlay
           loop
           muted
+          playsInline
+          webkit-playsinline="true"
           className="mb-20 h-auto w-full object-cover"
         />
       </Link>

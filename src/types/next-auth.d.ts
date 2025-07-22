@@ -9,6 +9,7 @@ declare module 'next-auth' {
     address?: string;
     district?: string;
     point?: number;
+    gender?: string;
   }
 
   interface Session {
@@ -20,6 +21,7 @@ declare module 'next-auth' {
       address?: string;
       district?: string;
       point?: number;
+      gender?: string;
     } & DefaultSession['user'];
   }
 }
@@ -33,5 +35,6 @@ declare module 'next-auth/jwt' {
     address?: string;
     district?: string;
     point?: number;
+    gender?: string;
   }
 }

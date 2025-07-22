@@ -95,20 +95,20 @@ const SectionCollection = () => {
     ],
   };
   return (
-    <div className="flex w-full items-center justify-center overflow-hidden pt-20">
+    <div className="flex w-full items-center justify-center overflow-hidden pt-12">
       <div className="container overflow-hidden">
-        <h2 className="mb-5 text-center text-2xl font-bold">
+        <h2 className="mb-5 text-center text-sm font-bold md:text-lg">
           {t('collectionTitle')}
         </h2>
         <Link
           href="https://www.instagram.com/mondial"
-          className="block text-center font-red-hat text-[14px] text-gray-400"
+          className="block text-center font-red-hat text-xs text-gray-400 md:text-sm"
         >
           {t('collectionSubtitle')}
         </Link>
         <Slider
           {...settings}
-          className="relative my-28 [&_.slick-list]:overflow-visible"
+          className="relative mb-28 mt-4 md:mt-12 [&_.slick-list]:overflow-visible"
         >
           {IMAGE.map((image, index) => (
             <div className="px-4" key={index}>

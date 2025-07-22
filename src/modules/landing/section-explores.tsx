@@ -26,13 +26,13 @@ const SectionExplores = () => {
             />
           </div>
           <div className="my-3.5 w-full text-center md:my-6">
-            <h2 className="text-md font-bold md:text-2xl">
+            <h2 className="text-sm font-bold md:text-lg">
               {t('bridalCollection')}
             </h2>
-            <h3 className="my-4 font-red-hat text-gray-400 md:my-5 md:text-xl">
+            <h3 className="my-4 font-red-hat text-xs text-gray-400 md:my-5 md:text-sm">
               {t('bridalSubtitle')}
             </h3>
-            <h4 className="my-4 font-red-hat text-secondary underline md:my-5 md:text-xl">
+            <h4 className="my-4 font-red-hat text-xs text-secondary underline md:my-5 md:text-sm">
               {t('seeCollection')}
             </h4>
           </div>
@@ -55,13 +55,13 @@ const SectionExplores = () => {
             />
           </div>
           <div className="my-3.5 w-full text-center md:my-6">
-            <h2 className="text-md font-bold md:text-2xl">
+            <h2 className="text-sm font-bold md:text-lg">
               {t('bookAppointment')}
             </h2>
-            <h3 className="my-4 font-red-hat text-gray-400 md:my-5 md:text-xl">
+            <h3 className="my-4 font-red-hat text-xs text-gray-400 md:my-5 md:text-sm">
               {t('bookAppointmentSubtitle')}
             </h3>
-            <h4 className="my-4 font-red-hat text-secondary underline md:my-5 md:text-xl">
+            <h4 className="my-4 font-red-hat text-xs text-secondary underline md:my-5 md:text-sm">
               {t('bookNow')}
             </h4>
           </div>

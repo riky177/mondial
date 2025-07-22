@@ -32,7 +32,7 @@ const Footer = () => {
     <footer className="flex w-full flex-col items-center md:pt-10">
       <div className="container flex flex-col justify-between p-7 md:flex-row md:px-12 md:pt-0">
         <div className="w-full md:max-w-[42%]">
-          <h5 className="mb-3 text-xl font-bold md:mb-8">
+          <h5 className="mb-3 text-[13px] font-bold md:mb-8 md:text-base">
             {t('footer.loyaltyProgram')}
           </h5>
 
@@ -73,28 +73,28 @@ const Footer = () => {
         </div>
         <div className="mt-4 flex flex-1 justify-between space-x-4 md:mt-0">
           <div>
-            <h5 className="mb-3 text-xl font-bold md:mb-8">
+            <h5 className="mb-3 text-[13px] font-bold md:mb-8 md:text-base">
               {t('footer.customerService')}
             </h5>
             {CSMENU.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="font-red-hat text-md block w-fit pb-5 text-gray-400 md:max-w-[210px] md:text-[13px]"
+                className="block w-fit pb-5 font-red-hat text-xs text-gray-400 md:max-w-[210px] md:text-[13px]"
               >
                 {item.title}
               </Link>
             ))}
           </div>
           <div>
-            <h5 className="mb-3 text-xl font-bold md:mb-8">
+            <h5 className="mb-3 text-[13px] font-bold md:mb-8">
               {t('footer.information')}
             </h5>
             {INFOMENU.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
-                className="font-red-hat text-md block w-fit pb-5 text-gray-400 md:max-w-[210px] md:text-[13px]"
+                className="block w-fit pb-5 font-red-hat text-xs text-gray-400 md:max-w-[210px] md:text-[13px]"
                 target={item.href.startsWith('http') ? '_blank' : undefined}
               >
                 {item.title}
@@ -102,7 +102,7 @@ const Footer = () => {
             ))}
           </div>
           <div>
-            <h5 className="mb-3 text-xl font-bold md:mb-8">
+            <h5 className="mb-3 text-[13px] font-bold md:mb-8">
               {t('footer.followUs')}
             </h5>
             <div className="flex space-x-4">
@@ -151,8 +151,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-primary w-full border-t-[1px] border-solid p-7 text-center md:px-12">
-        <p className="text-primary text-xl">{`© ${new Date().getFullYear()} Mondial`}</p>
+      <div className="w-full border-t-[1px] border-solid border-primary p-5 text-center md:px-12">
+        <p className="text-primary">{`© ${new Date().getFullYear()} Mondial`}</p>
       </div>
     </footer>
   );

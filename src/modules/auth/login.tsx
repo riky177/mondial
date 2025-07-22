@@ -42,7 +42,7 @@ const Login = () => {
           <h2 className="text-center text-2xl font-extrabold text-gray-900 md:text-[32px]">
             {t('title')}
           </h2>
-          <p className="mt-4 text-center font-red-hat text-[14px] text-secondary md:text-[16px]">
+          <p className="mt-1 text-center font-red-hat text-sm font-light text-secondary md:text-base">
             {t('subtitle')}
           </p>
         </div>
@@ -53,7 +53,7 @@ const Login = () => {
         >
           <form className="space-y-6" action="#">
             <div>
-              <label className="mb-2 block font-red-hat text-[14px] md:text-[16px]">
+              <label className="mb-2 block font-red-hat text-sm font-light md:text-base">
                 {t('phoneLabel')}
               </label>
               <input
@@ -61,7 +61,7 @@ const Login = () => {
                 name="phone"
                 type="tel"
                 required
-                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-3 font-red-hat text-xl placeholder-gray-500 placeholder:text-gray-300 focus:outline-none"
+                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-3 font-red-hat text-base placeholder-gray-500 placeholder:text-base placeholder:text-gray-300 focus:outline-none"
                 placeholder={t('phonePlaceholder')}
                 value={phone}
                 onChange={handlePhoneChange}
@@ -75,7 +75,7 @@ const Login = () => {
               <button
                 type="submit"
                 disabled={isLoading || !phone}
-                className="group relative flex w-full justify-center rounded-[28px] border border-transparent bg-black px-4 py-3 text-[14px] font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-[16px]"
+                className="group relative flex w-full justify-center rounded-[28px] border border-transparent bg-black px-4 py-3 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-base"
               >
                 {isLoading ? t('sendingButton') : t('signInButton')}
               </button>

@@ -22,6 +22,12 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
         return t('jewelry');
       case 'STORIES':
         return t('stories');
+      case 'ENGAGEMENT & BRIDAL':
+        return t('engagementBridal');
+      case 'GIFT IDEAS':
+        return t('giftIdeas');
+      case 'All About Diamonds':
+        return t('allAboutDiamonds');
       default:
         return title;
     }
@@ -73,7 +79,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
             className="flex cursor-pointer items-center justify-between pb-5"
             onClick={() => toggleMenu(menu.title)}
           >
-            <span>{getTranslatedTitle(menu.title)}</span>
+            <span className="font-red-hat text-sm text-tertiary">
+              {getTranslatedTitle(menu.title)}
+            </span>
             {activeMenu === menu.title ? (
               <HiOutlineChevronUp color="var(--color-primary)" size={20} />
             ) : (

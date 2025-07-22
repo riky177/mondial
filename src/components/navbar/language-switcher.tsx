@@ -14,10 +14,10 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="font-trajan-bold flex items-center">
       <button
         onClick={() => handleLanguageChange('id')}
-        className={`cursor-pointer font-bold transition-colors ${
+        className={`cursor-pointer text-xs font-bold transition-colors ${
           currentLocale === 'id' ? 'text-primary' : ''
         }`}
       >
@@ -26,7 +26,7 @@ export default function LanguageSwitcher() {
       <div className="mx-2 h-4 w-px bg-gray-300"></div>
       <button
         onClick={() => handleLanguageChange('en')}
-        className={`cursor-pointer font-bold transition-colors ${
+        className={`cursor-pointer text-xs font-bold transition-colors ${
           currentLocale === 'en' ? 'text-primary' : ''
         }`}
       >

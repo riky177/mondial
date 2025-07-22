@@ -30,10 +30,21 @@ const config: Config = {
       },
       fontFamily: {
         trajan: ['Trajan Pro', 'sans-serif'],
+        'trajan-bold': ['Trajan Pro Bold', 'sans-serif'],
         'red-hat': ['Red Hat Text', 'sans-serif'],
       },
       screens: {
         md: '981px',
+      },
+      fontSize: {
+        xxs: '10px',
+        xs: '12px',
+        sm: '14px',
+        base: '16px',
+        lg: '18px',
+        xl: '20px',
+        '2xl': '24px',
+        '3xl': '30px',
       },
     },
   },

@@ -16,27 +16,27 @@ const DesktopNavbar = () => {
     <div className="flex w-full flex-col items-center">
       <div className="container px-[15px] pt-1 text-secondary">
         <div className="flex w-full items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2">
             <LanguageSwitcher />
             <CiLocationOn color="var(--color-primary)" size={15} />
-            <div className="flex border-b-[1px] border-solid border-primary pt-3.5">
+            <div className="flex border-b-[1px] border-solid border-primary pt-2">
               <CiSearch color="var(--color-primary)" size={15} />
               <input
-                className="w-[125px] pb-2 pl-3 pr-5 text-secondary focus:outline-none"
+                className="w-[125px] pb-1 pl-3 pr-5 font-red-hat text-xs text-secondary placeholder:font-red-hat placeholder:text-xs focus:outline-none"
                 placeholder={`${t('search')}...`}
               ></input>
             </div>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
             {session.status === 'authenticated' ? (
               <Link
                 href="/accounts/personal-information"
-                className="text-secondary"
+                className="text-xs text-secondary"
               >
                 {session.data.user.name}
               </Link>
             ) : (
-              <Link href="/auth/login" className="text-secondary">
+              <Link href="/auth/login" className="text-xs text-secondary">
                 {t('signin')} / {t('signup')}
               </Link>
             )}

@@ -55,16 +55,16 @@ const MobileNavbar = () => {
               >
                 <HiOutlineX size={24} />
               </button>
-              <div className="overflow-y-auto px-2">
+              <div className="overflow-y-auto">
                 <MobileMenu onItemClick={() => setIsMenuOpen(false)} />
               </div>
             </div>
-            <div className="flex items-center border-y-[1px] border-gray-200 px-8 py-5">
+            <div className="flex items-center border-y-[1px] border-gray-200 px-5 py-4">
               <IoPersonOutline size={18} />
               <span className="ml-4" onClick={toggleMenu}>
                 {session.status === 'authenticated' ? (
                   <Link href="/accounts/profile">
-                    <span>MY ACCOUNT</span>
+                    <span className="text-sm">MY ACCOUNT</span>
                   </Link>
                 ) : (
                   <Link href="/auth/login">
@@ -73,7 +73,7 @@ const MobileNavbar = () => {
                 )}
               </span>
             </div>
-            <div className="px-8 py-8">
+            <div className="p-5 pt-7">
               <LanguageSwitcher />
             </div>
           </div>

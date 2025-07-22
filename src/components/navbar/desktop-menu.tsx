@@ -77,12 +77,12 @@ const Menu = () => {
     }, 300);
   };
   return (
-    <div className="relative mt-8 w-full" onMouseLeave={handleMouseLeave}>
+    <div className="relative mt-6 w-full" onMouseLeave={handleMouseLeave}>
       <div className="flex w-full items-center justify-center border-b-[1px] border-solid border-b-gray-200 pb-2.5">
         {MENU.map((menu) => (
           <div
             key={menu.title}
-            className="underline-hover mx-5 cursor-pointer font-semibold"
+            className="underline-hover font-trajan-bold mx-7 cursor-pointer text-xs text-tertiary"
             onMouseEnter={() => handleMouseEnter(menu.title)}
           >
             {getTranslatedTitle(menu.title)}
@@ -90,7 +90,7 @@ const Menu = () => {
         ))}
       </div>
       <div
-        className={`absolute left-0 top-6 z-10 flex w-full bg-white px-[60px] pt-4 transition-opacity duration-300 ${
+        className={`absolute left-0 top-6 z-10 flex w-full bg-white px-[78px] pt-4 transition-opacity duration-300 ${
           activeMenuTitle && isVisible
             ? 'opacity-100'
             : 'pointer-events-none opacity-0'
@@ -99,15 +99,15 @@ const Menu = () => {
         {activeMenuTitle &&
           MENU.find((menu) => menu.title === activeMenuTitle)?.sub_menu.map(
             (sub) => (
-              <div key={sub.title} className="max-w-[265px] px-2 py-2">
-                <div className="mb-4 text-xl font-bold text-black">
+              <div key={sub.title} className="max-w-[25%] px-2 pb-6">
+                <div className="font-trajan-bold mb-4 text-[13px] text-black">
                   {getTranslatedSubTitle(sub.title)}
                 </div>
                 {sub.detail_menu.map((detail) => (
                   <a
                     key={detail.title}
                     href={detail.href}
-                    className="underline-hover fitc block w-fit px-2 py-2 text-xs text-secondary"
+                    className="underline-hover text-xxs block w-fit px-2 py-2 font-red-hat text-tertiary"
                   >
                     {getTranslatedDetailTitle(detail.title)}
                   </a>

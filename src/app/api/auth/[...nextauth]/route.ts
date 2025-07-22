@@ -67,6 +67,7 @@ const handler = NextAuth({
         token.name = user.name;
         token.birthdate = user.birthdate;
         token.point = user.point;
+        token.gender = user.gender;
       }
       return token;
     },
@@ -79,6 +80,7 @@ const handler = NextAuth({
         session.user.name = token.name;
         session.user.birthdate = token.birthdate;
         session.user.point = token.point;
+        session.user.gender = token.gender;
       }
       return session;
     },

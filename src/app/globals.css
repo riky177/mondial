@@ -22,7 +22,7 @@
 }
 
 @font-face {
-  font-family: 'Trajan Pro';
+  font-family: 'Trajan Pro Bold';
   src: url('/fonts/trajan-pro/TrajanPro-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
@@ -33,8 +33,6 @@
 html,
 body {
   font-family: 'Trajan Pro', sans-serif;
-  font-size: 12px;
-  text-rendering: optimizeLegibility;
 }
 
 @layer components {
@@ -60,13 +58,18 @@ body {
     transform: scaleX(1);
   }
   .font-red-hat {
-    font-family: 'Red Hat Text', sans-serif;
+    font-family: 'Red Hat Text', sans-serif !important;
+  }
+
+  .font-xxs {
+    font-size: 0.625rem; /* 10px */
   }
 }
 
 @layer utilities {
   .container {
     max-width: 1168px;
+    margin: auto;
   }
 }
 
