@@ -4,7 +4,12 @@ import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { HiOutlineChevronDown, HiOutlineChevronUp } from 'react-icons/hi';
 
-import { MENU } from './constant';
+import {
+  getTranslatedDetailTitle,
+  getTranslatedSubTitle,
+  getTranslatedTitle,
+  MENU,
+} from './constant';
 
 interface MobileMenuProps {
   onItemClick: () => void;
@@ -13,59 +18,6 @@ interface MobileMenuProps {
 const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const t = useTranslations('navbar.menu');
-
-  const getTranslatedTitle = (title: string) => {
-    switch (title) {
-      case 'HIGH JEWELRY':
-        return t('highJewelry');
-      case 'JEWELRY':
-        return t('jewelry');
-      case 'STORIES':
-        return t('stories');
-      case 'ENGAGEMENT & BRIDAL':
-        return t('engagementBridal');
-      case 'GIFT IDEAS':
-        return t('giftIdeas');
-      case 'All About Diamonds':
-        return t('allAboutDiamonds');
-      default:
-        return title;
-    }
-  };
-
-  const getTranslatedSubTitle = (title: string) => {
-    switch (title) {
-      case 'Precious Stone & Fancy Diamond':
-        return t('subMenu.preciousStone');
-      case 'Branded Diamond & Pearl':
-        return t('subMenu.brandedDiamond');
-      case 'Branded Diamond & Pearldf':
-        return t('subMenu.brandedDiamond');
-      default:
-        return title;
-    }
-  };
-
-  const getTranslatedDetailTitle = (title: string) => {
-    switch (title) {
-      case 'PRECIOUS STONE':
-        return t('subMenu.preciousStoneMenu');
-      case 'FANCY DESIGN':
-        return t('subMenu.fancyDesign');
-      case 'FANCY SHAPE DIAMOND':
-        return t('subMenu.fancyShapeDiamond');
-      case 'FANCY COLOR DIAMOND':
-        return t('subMenu.fancyColorDiamond');
-      case 'MAC ULTIMATE':
-        return t('subMenu.macUltimate');
-      case 'BERLIANT ROSE':
-        return t('subMenu.berliantRose');
-      case 'FIREMARK':
-        return t('subMenu.firemark');
-      default:
-        return title;
-    }
-  };
 
   const toggleMenu = (menuTitle: string) => {
     setActiveMenu(activeMenu === menuTitle ? null : menuTitle);
@@ -80,7 +32,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
             onClick={() => toggleMenu(menu.title)}
           >
             <span className="font-red-hat text-sm text-tertiary">
-              {getTranslatedTitle(menu.title)}
+              {getTranslatedTitle(t, menu.title)}
             </span>
             {activeMenu === menu.title ? (
               <HiOutlineChevronUp color="var(--color-primary)" size={20} />
@@ -95,7 +47,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
                 <div key={sub.title} className="px-4 py-2">
                   {sub.title && (
                     <div className="mb-2 text-sm font-bold text-gray-800">
-                      {getTranslatedSubTitle(sub.title)}
+                      {getTranslatedSubTitle(t, sub.title)}
                     </div>
                   )}
                   {sub.detail_menu.map((detail) => (
@@ -105,7 +57,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
                       className="block py-2 pl-4 text-sm text-secondary hover:text-primary"
                       onClick={onItemClick}
                     >
-                      {getTranslatedDetailTitle(detail.title)}
+                      {getTranslatedDetailTitle(t, detail.title)}
                     </a>
                   ))}
                 </div>

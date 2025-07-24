@@ -2,9 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CiSearch } from 'react-icons/ci';
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
 import { IoPersonOutline } from 'react-icons/io5';
@@ -15,15 +16,41 @@ import MobileMenu from './mobile-menu';
 const MobileNavbar = () => {
   const session = useSession();
   const t = useTranslations('common');
+  const { push } = useRouter();
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const searchRef = useRef<HTMLDivElement>(null);
+  const inputSearchRef = useRef<HTMLInputElement>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleSearchToggle = () => {
+    setIsSearchOpen(!isSearchOpen);
+    if (isSearchOpen && inputSearchRef.current?.value) {
+      push(`/products/search?query=${inputSearchRef.current.value}`);
+    }
+  };
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        searchRef.current &&
+        !searchRef.current.contains(event.target as Node)
+      ) {
+        setIsSearchOpen(false);
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
     <div className="border-b-[1px] border-solid border-b-gray-200 text-secondary">
-      <div className="flex w-full items-center justify-between p-4">
+      <div className="relative flex w-full items-center justify-between p-4">
         <button
           onClick={toggleMenu}
           className="flex cursor-pointer items-center justify-center"
@@ -42,7 +69,30 @@ const MobileNavbar = () => {
             />
           </Link>
         </div>
-        <CiSearch color="var(--color-primary)" size={20} />
+        <CiSearch
+          color="var(--color-primary)"
+          className="cursor-pointer"
+          size={20}
+          onClick={() => setIsSearchOpen(!isSearchOpen)}
+        />
+        {isSearchOpen && (
+          <div
+            className="absolute bottom-[-68px] left-0 z-10 flex w-full bg-white px-5 py-4"
+            ref={searchRef}
+          >
+            <input
+              className="mr-2 w-full rounded-md border-[1px] border-tertiary px-2.5 py-2 font-red-hat text-sm outline-none placeholder:font-red-hat placeholder:text-tertiary"
+              placeholder="Search Products"
+              ref={inputSearchRef}
+            />
+            <button
+              className="rounded-3xl bg-[#3D3E40] px-7 py-2 font-red-hat text-white"
+              onClick={handleSearchToggle}
+            >
+              Search
+            </button>
+          </div>
+        )}
       </div>
       <div>
         {isMenuOpen && (

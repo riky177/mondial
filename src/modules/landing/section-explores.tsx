@@ -8,7 +8,7 @@ const SectionExplores = () => {
   return (
     <div className="flex w-full justify-center">
       <div className="container flex flex-wrap justify-center space-x-7 p-7">
-        <Link href="/bridal-collection">
+        <Link href="/products/engagement-bridal">
           <div className="md:hidden">
             <Image
               src="https://production-mondial.stamps.id/media/thumb/collection-banner-image/2023/3/9/uxmdnrxjynpzg7aclcuayt_size_440.png"

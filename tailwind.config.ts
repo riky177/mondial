@@ -32,6 +32,7 @@ const config: Config = {
         trajan: ['Trajan Pro', 'sans-serif'],
         'trajan-bold': ['Trajan Pro Bold', 'sans-serif'],
         'red-hat': ['Red Hat Text', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       screens: {
         md: '981px',

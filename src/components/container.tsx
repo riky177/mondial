@@ -1,3 +1,6 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 import Footer from './footer';
@@ -9,12 +12,15 @@ type ContainerProps = {
 };
 
 const Container = ({ children }: ContainerProps) => {
+  const pathname = usePathname();
+  const isMondialPreciousPage = pathname.includes('/mondial-precious');
+
   return (
     <div>
       <Navbar />
       {children}
-      <SectionWhy />
-      <Footer />
+      {!isMondialPreciousPage && <SectionWhy />}
+      {!isMondialPreciousPage && <Footer />}
     </div>
   );
 };

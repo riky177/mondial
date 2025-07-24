@@ -136,6 +136,8 @@ const OTP = () => {
               </button>
             </div>
 
+            <div className="text-center">MOCK OTP : 123456</div>
+            {/* 
             <div className="pt-4 text-center">
               {countdown > 0 ? (
                 <p className="font-red-hat text-[14px] text-gray-600 md:text-[16px]">
@@ -150,7 +152,7 @@ const OTP = () => {
                   {t('resendButton')}
                 </button>
               )}
-            </div>
+            </div> */}
           </form>
         </div>
       </div>
