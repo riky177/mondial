@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import React from 'react';
+import React, { useRef } from 'react';
 import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import Slider, { Settings } from 'react-slick';
 
@@ -37,6 +37,7 @@ const IMAGE = [
 
 const SectionCollection = () => {
   const t = useTranslations('landing');
+  const sliderRef = useRef<Slider>(null);
 
   const CustomPrevArrow = (props: any) => {
     const { onClick } = props;
@@ -66,22 +67,21 @@ const SectionCollection = () => {
 
   const settings: Settings = {
     infinite: true,
+
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    arrows: true,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
+    centerMode: true,
 
     responsive: [
       {
         breakpoint: 1024,
         settings: {
+          centerMode: true,
           slidesToShow: 3,
           slidesToScroll: 1,
-          arrows: true,
         },
       },
       {
@@ -89,13 +89,17 @@ const SectionCollection = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: false,
+          centerMode: false,
         },
       },
     ],
   };
   return (
-    <div className="flex w-full items-center justify-center overflow-hidden pt-12">
+    <div className="relative flex w-full items-center justify-center pt-12">
+      <div className="absolute z-10 hidden w-full max-w-[1300px] justify-between md:flex">
+        <CustomPrevArrow onClick={() => sliderRef.current?.slickPrev()} />
+        <CustomNextArrow onClick={() => sliderRef.current?.slickNext()} />
+      </div>
       <div className="container overflow-hidden">
         <h2 className="mb-5 text-center text-sm font-bold md:text-lg">
           {t('collectionTitle')}
@@ -108,6 +112,7 @@ const SectionCollection = () => {
         </Link>
         <Slider
           {...settings}
+          ref={sliderRef}
           className="relative mb-28 mt-4 md:mt-12 [&_.slick-list]:overflow-visible"
         >
           {IMAGE.map((image, index) => (

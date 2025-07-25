@@ -7,16 +7,131 @@
   "memberFormTitle": "be the first to know the secret from mondial PRECIOUS!",
   "phoneLabel": "Your Phone Number",
   "phonePlaceholder": "872xxxxx",
-  "arcTitle": "ARC",
-  "arcDescription": "Whether worn as a brooch, pendant or a necklace, this piece is designed to elevate any ensemble with its undeniable charm and versatility.",
-  "trevaleTitle": "Trevalé",
-  "trevaleDescription": "A perfect blend of geometric elegance and symbolic meaning. Inspired by the concept of rising through three stages, each piece in this collection symbolizes a journey of progression and elevation with bold triangular motifs and ascending patterns.",
   "discover": "Discover",
-  "arcLadiesRing": "Mondial Precious ARC LADIES RING",
-  "arcPendantChain": "Mondial Precious ARC PENDANT CHAIN",
-  "arcTwistLadiesRing": "Mondial Precious ARC TWIST LADIES RING",
-  "trevaleEarrings": "Mondial Precious Trevalé EARRINGS",
-  "trevaleNecklace": "Mondial Precious Trevalé NECKLACE",
-  "trevaleLadiesRing": "Mondial Precious Trevalé LADIES RING",
-  "copyright": "© 2025 MONDIAL Jeweler | PT. CENTRAL MEGA KENCANA"
+  "youtubeVideoTitle": "YouTube video player",
+  "copyright": "© 2025 MONDIAL Jeweler | PT. CENTRAL MEGA KENCANA",
+  "collections": {
+    "arc": {
+      "title": "ARC",
+      "description": [
+        "A masterful series that traces the fine lines of heritage and modernity, weaving them into an exquisite narrative of elegance.",
+        "These pieces are designed for those who value precision and appreciate the art of meticulous craftsmanship."
+      ],
+      "items": {
+        "ladiesRing": "Mondial Precious ARC LADIES RING",
+        "pendantChain": "Mondial Precious ARC PENDANT CHAIN",
+        "twistLadiesRing": "Mondial Precious ARC TWIST LADIES RING"
+      }
+    },
+    "trevale": {
+      "title": "Trevalé",
+      "description": [
+        "A perfect blend of geometric elegance and symbolic meaning. Inspired by the concept of rising through three stages, each piece in this collection symbolizes a journey of progression and elevation with bold triangular motifs and ascending patterns."
+      ],
+      "items": {
+        "earrings": "Mondial Precious Trevalé EARRINGS",
+        "necklace": "Mondial Precious Trevalé NECKLACE",
+        "ladiesRing": "Mondial Precious Trevalé LADIES RING"
+      }
+    },
+    "gradiore": {
+      "title": "GRADIORE",
+      "description": [
+        "Gentlemen's courage, courtesy, and loyalty to their lover to have a step or lead actions as their form of chivalry."
+      ],
+      "items": {
+        "chivalryMensRing": "Mondial Precious Gradiore Chivalry Men's Ring",
+        "ascentRing": "Mondial Precious Gradiore Ascent Ring",
+        "diamondMensRing": "Mondial Precious Gradiore DIAMOND MEN'S Ring"
+      }
+    },
+    "lavesa": {
+      "title": "Lavesa",
+      "description": [
+        "Grandeur and beauty of the magnificent 3ct ceylon blue sapphire cushion shape, the birthstone of MONDIAL. It symbolize beauty, elegance and commitment.",
+        "The lavish design is complimented by the fanciest diamonds, including princess cut, and the magnificent cushion shaped sapphire."
+      ],
+      "items": {
+        "necklace": "Mondial Precious Lavesa Necklace",
+        "ladiesRing": "Mondial Precious Lavesa Ladies Ring",
+        "earrings": "Mondial Precious Lavesa Earrings",
+        "bangle": "Mondial Precious Lavesa Bangle"
+      }
+    },
+    "opulence": {
+      "title": "opulence",
+      "description": [
+        "Great Luxuriousness from sequence of rubies and sapphires.",
+        "A continuous and complete strand of more than 5ct diamonds, ruby and sapphire mixture of round, princess, & triangle-shaped diamonds for an elegant and classic look that encircles the full opulence."
+      ],
+      "items": {
+        "grandNecklace": "Mondial Precious Opulence GRAND Necklace",
+        "ladiesRing": "Mondial Precious Opulence LADIES RING",
+        "grandEarrings": "Mondial Precious Opulence GRAND Earrings"
+      }
+    },
+    "alinate": {
+      "title": "Alinate",
+      "description": [
+        "Experience the epitome of luxury and prosperity with Alinate. The exquisite sequence, sapphires and diamonds will grace your hand with elegance and style.",
+        "Enjoy the classic and refined beauty of Alinate, designed for those who appreciate the finer things in life."
+      ],
+      "items": {
+        "ladiesRing": "Mondial Precious Alinate Ladies Ring",
+        "trayerLadiesRing": "Mondial Precious Alinate Trayer Ladies Ring",
+        "earrings": "Mondial Precious Alinate Earrings",
+        "pendantChain": "Mondial Precious Alinate Pendant Chain"
+      }
+    },
+    "fierte": {
+      "title": "FIERTE",
+      "description": [
+        "Represent the idealized model's collective inherited ideas when making these pieces that bring pleasure and satisfaction.",
+        "Using basic shapes that symbolize his pattern of thoughts based on his belief in originality."
+      ],
+      "items": {
+        "alignedPendantChain": "Mondial Precious Fierte Aligned Pendant Chain",
+        "pendantChain": "Mondial Precious Fierte Pendant Chain",
+        "earrings": "Mondial Precious Fierte Earrings",
+        "brooch": "Mondial Precious Fierte BROOCH"
+      }
+    },
+    "enchante": {
+      "title": "ENCHANTE",
+      "description": [
+        "Inspired by the happy journey and enchanted jewelry-making moments with Nicholas.",
+        "This series represent our wish that wearers would be delighted to have these collections."
+      ],
+      "items": {
+        "ladiesRing": "Mondial Precious Enchante Ladies Ring",
+        "trayerLadiesRing": "Mondial Precious Enchante Trayer Ladies Ring",
+        "earrings": "Mondial Precious Enchante Earrings",
+        "pendantChain": "Mondial Precious Enchante Pendant Chain"
+      }
+    },
+    "lune": {
+      "title": "lune",
+      "description": [
+        "Inspired by wisdom and intuition, this exquisite jewelry showcases the deep understanding that comes from insight.",
+        "Created to encourage the wearers to make wise choices, each piece combines beauty and meaning, just like the moon gently lights up the night, these creations remind the wearers to always look for the best solution using their inner wisdom."
+      ],
+      "items": {
+        "pendantChain": "Mondial Precious Lune Pendant Chain",
+        "aimPendantChain": "Mondial Precious Lune Aim Pendant Chain",
+        "chainBracelet": "Mondial Precious Lune Chain Bracelet"
+      }
+    },
+    "pointe": {
+      "title": "POINTE",
+      "description": [
+        "Sharp-edged jewelry represents emboldened ness characterized by STRENGTH AND DISTINCTNESS OF PERCEPTION."
+      ],
+      "items": {
+        "earrings": "MONDIAL PRECIOUS pointe EARRINGS",
+        "pendantChain": "Mondial Precious POINTE PENDANT CHAIN",
+        "ladiesRing": "Mondial Necklace POINTE LADIES RING",
+        "mensRing": "Mondial Necklace POINTE MENS RING"
+      }
+    }
+  }
 }

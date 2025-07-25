@@ -7,16 +7,131 @@
   "memberFormTitle": "jadilah yang pertama mengetahui rahasia dari mondial PRECIOUS!",
   "phoneLabel": "Nomor Telepon Anda",
   "phonePlaceholder": "872xxxxx",
-  "arcTitle": "ARC",
-  "arcDescription": "Apakah dikenakan sebagai bros, liontin atau kalung, karya ini dirancang untuk meningkatkan setiap ensemble dengan pesona dan keserbagunaannya yang tak terbantahkan.",
-  "trevaleTitle": "Trevalé",
-  "trevaleDescription": "Perpaduan sempurna antara elegansi geometris dan makna simbolis. Terinspirasi dari konsep naik melalui tiga tahap, setiap karya dalam koleksi ini melambangkan perjalanan kemajuan dan elevasi dengan motif segitiga yang berani dan pola naik.",
   "discover": "Temukan",
-  "arcLadiesRing": "Mondial Precious ARC CINCIN WANITA",
-  "arcPendantChain": "Mondial Precious ARC RANTAI LIONTIN",
-  "arcTwistLadiesRing": "Mondial Precious ARC TWIST CINCIN WANITA",
-  "trevaleEarrings": "Mondial Precious Trevalé ANTING",
-  "trevaleNecklace": "Mondial Precious Trevalé KALUNG",
-  "trevaleLadiesRing": "Mondial Precious Trevalé CINCIN WANITA",
-  "copyright": "© 2025 MONDIAL Jeweler | PT. CENTRAL MEGA KENCANA"
+  "youtubeVideoTitle": "Pemutar video YouTube",
+  "copyright": "© 2025 MONDIAL Jeweler | PT. CENTRAL MEGA KENCANA",
+  "collections": {
+    "arc": {
+      "title": "ARC",
+      "description": [
+        "Seri yang menguasai seni melacak garis halus warisan dan modernitas, menenunnya menjadi narasi keanggunan yang indah.",
+        "Karya-karya ini dirancang untuk mereka yang menghargai presisi dan mengapresiasi seni keahlian yang teliti."
+      ],
+      "items": {
+        "ladiesRing": "Mondial Precious ARC CINCIN WANITA",
+        "pendantChain": "Mondial Precious ARC RANTAI LIONTIN",
+        "twistLadiesRing": "Mondial Precious ARC TWIST CINCIN WANITA"
+      }
+    },
+    "trevale": {
+      "title": "Trevalé",
+      "description": [
+        "Perpaduan sempurna antara elegansi geometris dan makna simbolis. Terinspirasi dari konsep naik melalui tiga tahap, setiap karya dalam koleksi ini melambangkan perjalanan kemajuan dan elevasi dengan motif segitiga yang berani dan pola naik."
+      ],
+      "items": {
+        "earrings": "Mondial Precious Trevalé ANTING",
+        "necklace": "Mondial Precious Trevalé KALUNG",
+        "ladiesRing": "Mondial Precious Trevalé CINCIN WANITA"
+      }
+    },
+    "gradiore": {
+      "title": "GRADIORE",
+      "description": [
+        "Keberanian, kesopanan, dan kesetiaan pria kepada kekasihnya untuk mengambil langkah atau memimpin tindakan sebagai bentuk ksatrianya."
+      ],
+      "items": {
+        "chivalryMensRing": "Mondial Precious Gradiore Chivalry Cincin Pria",
+        "ascentRing": "Mondial Precious Gradiore Ascent Ring",
+        "diamondMensRing": "Mondial Precious Gradiore DIAMOND CINCIN PRIA"
+      }
+    },
+    "lavesa": {
+      "title": "Lavesa",
+      "description": [
+        "Kemegahan dan keindahan safir biru Ceylon 3ct berbentuk cushion yang megah, batu kelahiran MONDIAL. Ini melambangkan kecantikan, keanggunan dan komitmen.",
+        "Desain mewah dilengkapi dengan berlian terfancy, termasuk potongan princess, dan safir berbentuk cushion yang megah."
+      ],
+      "items": {
+        "necklace": "Mondial Precious Lavesa Kalung",
+        "ladiesRing": "Mondial Precious Lavesa Cincin Wanita",
+        "earrings": "Mondial Precious Lavesa Anting",
+        "bangle": "Mondial Precious Lavesa Gelang"
+      }
+    },
+    "opulence": {
+      "title": "opulence",
+      "description": [
+        "Kemewahan Besar dari rangkaian ruby dan safir.",
+        "Untaian berlian, ruby dan safir yang berkelanjutan dan lengkap lebih dari 5ct campuran berlian berbentuk bulat, princess, & segitiga untuk tampilan elegan dan klasik yang melingkari kemewahan penuh."
+      ],
+      "items": {
+        "grandNecklace": "Mondial Precious Opulence GRAND Kalung",
+        "ladiesRing": "Mondial Precious Opulence CINCIN WANITA",
+        "grandEarrings": "Mondial Precious Opulence GRAND Anting"
+      }
+    },
+    "alinate": {
+      "title": "Alinate",
+      "description": [
+        "Rasakan puncak kemewahan dan kemakmuran dengan Alinate. Rangkaian indah, safir dan berlian akan menghiasi tangan Anda dengan keanggunan dan gaya.",
+        "Nikmati keindahan klasik dan halus Alinate, dirancang untuk mereka yang menghargai hal-hal terbaik dalam hidup."
+      ],
+      "items": {
+        "ladiesRing": "Mondial Precious Alinate Cincin Wanita",
+        "trayerLadiesRing": "Mondial Precious Alinate Trayer Cincin Wanita",
+        "earrings": "Mondial Precious Alinate Anting",
+        "pendantChain": "Mondial Precious Alinate Rantai Liontin"
+      }
+    },
+    "fierte": {
+      "title": "FIERTE",
+      "description": [
+        "Mewakili ide-ide warisan kolektif model yang diidealkan saat membuat karya-karya ini yang memberikan kesenangan dan kepuasan.",
+        "Menggunakan bentuk dasar yang melambangkan pola pemikirannya berdasarkan kepercayaannya pada orisinalitas."
+      ],
+      "items": {
+        "alignedPendantChain": "Mondial Precious Fierte Aligned Rantai Liontin",
+        "pendantChain": "Mondial Precious Fierte Rantai Liontin",
+        "earrings": "Mondial Precious Fierte Anting",
+        "brooch": "Mondial Precious Fierte BROS"
+      }
+    },
+    "enchante": {
+      "title": "ENCHANTE",
+      "description": [
+        "Terinspirasi oleh perjalanan bahagia dan momen pembuatan perhiasan yang terpesona dengan Nicholas.",
+        "Seri ini mewakili harapan kami bahwa pemakai akan senang memiliki koleksi ini."
+      ],
+      "items": {
+        "ladiesRing": "Mondial Precious Enchante Cincin Wanita",
+        "trayerLadiesRing": "Mondial Precious Enchante Trayer Cincin Wanita",
+        "earrings": "Mondial Precious Enchante Anting",
+        "pendantChain": "Mondial Precious Enchante Rantai Liontin"
+      }
+    },
+    "lune": {
+      "title": "lune",
+      "description": [
+        "Terinspirasi oleh kebijaksanaan dan intuisi, perhiasan indah ini menampilkan pemahaman mendalam yang berasal dari wawasan.",
+        "Diciptakan untuk mendorong pemakai membuat pilihan bijak, setiap karya menggabungkan keindahan dan makna, seperti bulan yang lembut menerangi malam, kreasi ini mengingatkan pemakai untuk selalu mencari solusi terbaik menggunakan kebijaksanaan batin mereka."
+      ],
+      "items": {
+        "pendantChain": "Mondial Precious Lune Rantai Liontin",
+        "aimPendantChain": "Mondial Precious Lune Aim Rantai Liontin",
+        "chainBracelet": "Mondial Precious Lune Gelang Rantai"
+      }
+    },
+    "pointe": {
+      "title": "POINTE",
+      "description": [
+        "Perhiasan bertepi tajam mewakili keberanian yang ditandai dengan KEKUATAN DAN KEJELASAN PERSEPSI."
+      ],
+      "items": {
+        "earrings": "MONDIAL PRECIOUS pointe ANTING",
+        "pendantChain": "Mondial Precious POINTE RANTAI LIONTIN",
+        "ladiesRing": "Mondial Necklace POINTE CINCIN WANITA",
+        "mensRing": "Mondial Necklace POINTE CINCIN PRIA"
+      }
+    }
+  }
 }

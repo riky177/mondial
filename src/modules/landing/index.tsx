@@ -20,12 +20,12 @@ const Landing = () => {
           muted
           playsInline
           webkit-playsinline="true"
-          className="mb-20 h-auto w-full object-cover"
+          className="mb-10 h-auto w-full object-cover md:mb-20"
         />
         <h2 className="text-center text-sm font-bold md:text-lg">
           {t('mondialPrecious')}
         </h2>
-        <p className="mb-20 mt-4 text-center font-red-hat text-xs underline md:text-sm">
+        <p className="mb-10 mt-4 text-center font-red-hat text-xs underline md:mb-20 md:text-sm">
           {t('discoverCollection')}
         </p>
       </Link>
@@ -39,7 +39,7 @@ const Landing = () => {
             width: '100%',
             height: 'auto',
           }}
-          className="mb-20"
+          className="mb-10 md:mb-20"
         />
         <h2 className="text-center text-sm font-bold md:text-lg">
           {t('iSaidMondial')}
@@ -57,7 +57,7 @@ const Landing = () => {
           muted
           playsInline
           webkit-playsinline="true"
-          className="mb-20 h-auto w-full object-cover"
+          className="mb-10 h-auto w-full object-cover md:mb-20"
         />
       </Link>
       <SectionExplores />
