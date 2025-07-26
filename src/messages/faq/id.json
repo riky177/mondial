@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "product": {
+      "title": "PRODUK",
+      "items": {
+        "0": {
+          "question": "Bisakah kami membeli item MONDIAL melalui website ini?",
+          "answer": "Sayangnya, website kami hanya menyediakan katalog produk. Saat ini, kami tidak dapat menerima transaksi online apapun. Jika Anda membutuhkan bantuan dalam membeli produk kami, Anda dapat langsung menghubungi kami dan mencari toko terdekat dari lokasi Anda."
+        },
+        "1": {
+          "question": "Metode pembayaran apa yang diterima MONDIAL?",
+          "answer": "Kami menerima beberapa jenis pembayaran kartu debit atau kredit, tunai, dan metode pembayaran lainnya. Untuk informasi lebih lanjut, Anda selalu dapat menghubungi kami"
+        },
+        "2": {
+          "question": "Bagaimana cara mengetahui ukuran saya?",
+          "answer": "Jika Anda mencari ukuran cincin, Anda dapat menggunakan panduan ukuran yang disediakan di website kami di sini. Selain itu, setiap produk memiliki deskripsi dengan ukuran produk spesifik dan panjang rantai untuk gelang dan kalung"
+        },
+        "3": {
+          "question": "Bisakah saya mempersonalisasi item?",
+          "answer": "Anda dapat menyesuaikan atau mempersonalisasi perhiasan Anda dari MONDIAL. Silakan berkonsultasi dengan kami dengan mengunjungi toko MONDIAL terdekat atau dengan menghubungi kami, sehingga kami dapat memberikan inspirasi desain dan mewujudkan desain perhiasan kustom Anda."
+        },
+        "4": {
+          "question": "Bisakah saya mengukir perhiasan saya?",
+          "answer": "Kami dapat mengukir nama, inisial, atau tanggal pada cincin yang dibeli di MONDIAL. Anda dapat meminta jenis font. Untuk jenis ukiran lainnya, silakan hubungi kami untuk informasi lebih lanjut."
+        }
+      }
+    },
+    "packaging": {
+      "title": "KEMASAN DAN HADIAH",
+      "items": {
+        "0": {
+          "question": "Kemasan seperti apa yang akan saya terima untuk pesanan saya?",
+          "answer": "Semua item MONDIAL dikemas dengan hati-hati dalam kotak MONDIAL biru khas kami, serta dalam tas kertas elegan yang melengkapi setiap pembelian. Setiap kemasan dibuat dengan bahan berkualitas premium untuk mencocokkan produk premium kami."
+        },
+        "1": {
+          "question": "Bagaimana cara mengetahui hadiah apa yang harus diberikan untuk pacar saya?",
+          "answer": "Jika Anda mencari hadiah, Anda dapat pergi ke menu 'Gift Finder' dan menemukan produk yang sempurna untuk acara khusus tertentu. Anda selalu dapat berkonsultasi dengan tim perwakilan perhiasan kami untuk menemukan hadiah yang sempurna dengan menghubungi kami."
+        }
+      }
+    },
+    "guarantee": {
+      "title": "GARANSI & KEASLIAN",
+      "items": {
+        "0": {
+          "question": "Bagaimana cara mengetahui apakah berlian MONDIAL adalah berlian alami yang asli?",
+          "answer": "Semua berlian MONDIAL berlisensi dan dijamin, serta memiliki sertifikat dan kode unik masing-masing."
+        },
+        "1": {
+          "question": "Bagaimana cara mempelajari lebih lanjut tentang garansi saya?",
+          "answer": "Untuk item yang dibeli, kartu garansi yang telah dilengkapi akan disertakan dengan pesanan Anda. Anda selalu dapat menghubungi kami untuk informasi lebih lanjut tentang program garansi."
+        },
+        "2": {
+          "question": "Apakah saya mendapat Sertifikat Berlian ketika membeli MONDIAL?",
+          "answer": "Anda akan mendapat Sertifikat Perhiasan ketika membeli semua perhiasan MONDIAL. Namun, jika Anda membeli Perhiasan Berlian Bermerek, Anda akan mendapat sertifikat fisik atau digital tambahan. Untuk informasi sertifikat, Anda selalu dapat menghubungi kami."
+        }
+      }
+    },
+    "returns": {
+      "title": "PENGEMBALIAN & TUKAR",
+      "items": {
+        "0": {
+          "question": "Bagaimana cara menjual kembali perhiasan MONDIAL saya?",
+          "answer": "Anda dapat datang ke toko MONDIAL dengan perhiasan yang telah Anda beli. Jangan lupa membawa bukti pembelian. Harap dicatat bahwa kami memiliki kebijakan beli kembali dan jual kembali yang harus dipenuhi sebelum melakukan transaksi. Untuk informasi lebih lanjut Anda selalu dapat menghubungi kami."
+        }
+      }
+    },
+    "covid": {
+      "title": "CATATAN TENTANG COVID-19",
+      "items": {
+        "0": {
+          "question": "Tindakan pencegahan apa yang diambil di toko MONDIAL untuk memastikan keselamatan klien dan karyawan?",
+          "answer": "MONDIAL berkomitmen untuk melindungi staf dan kliennya, dan telah menerapkan pedoman dan protokol Covid-19 nasional berikut. Kami saat ini menerapkan langkah-langkah pencegahan untuk membatasi penularan Covid-19, termasuk mencuci tangan yang sering dan disinfeksi rutin semua permukaan dan area sepanjang hari. Untuk memastikan kesehatan dan keselamatan klien, staf, dan komunitas kami yang berharga, kami membatasi jumlah orang yang dapat kami sambut di toko kami pada saat yang sama. Staf kami akan mengenakan masker wajah, sarung tangan, dan peralatan pelindung tambahan bila berlaku. Klien diharuskan mengenakan masker wajah standar untuk memasuki toko, dan kami juga menyediakan masker wajah jika diperlukan. Hand sanitizer juga akan tersedia di seluruh toko kami, dan kami mendorong tamu kami untuk menggunakannya saat memasuki toko."
+        }
+      }
+    }
+  }
+}

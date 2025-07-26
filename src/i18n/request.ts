@@ -17,6 +17,8 @@ async function loadMessages(locale: string): Promise<MessageObject> {
     contacts: () => import(`../messages/contacts/${locale}.json`),
     mondialPrecious: () =>
       import(`../messages/mondial-precious/${locale}.json`),
+    faq: () => import(`../messages/faq/${locale}.json`),
+    terms: () => import(`../messages/terms/${locale}.json`),
   };
 
   // Load all message modules

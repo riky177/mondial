@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "product": {
+      "title": "PRODUCT",
+      "items": {
+        "0": {
+          "question": "Can we purchase MONDIAL items through this website?",
+          "answer": "Unfortunately, our website only provides a product catalog. Currently, we are unable to accept any type of transaction online. If you need any assistance in purchasing our products, you can directly contact us and locate the closest store to your location."
+        },
+        "1": {
+          "question": "What payment methods does MONDIAL accept?",
+          "answer": "We accept several types of debit or credit card payments, cash, and other payment methods. For further information, you can always contact us"
+        },
+        "2": {
+          "question": "How do I know my size?",
+          "answer": "If you're looking for your ring size, you can use our size guide provided on our website here. In addition to this, each product has a description with the specific product measurements and chain length for bracelets and necklaces"
+        },
+        "3": {
+          "question": "Can I get an item personalized?",
+          "answer": "You can customize or personalize your jewelry from MONDIAL. Please consult with us by visiting the closest MONDIAL store or by contacting us, so we can provide design inspiration and bring your custom jewelry design to life."
+        },
+        "4": {
+          "question": "Can I get my jewelry engraved?",
+          "answer": "We can engrave your name, initial, or date on your ring that was purchased in MONDIAL. You can request the font type. For other types of engraving, please kindly contact us for further information."
+        }
+      }
+    },
+    "packaging": {
+      "title": "PACKAGING AND GIFT",
+      "items": {
+        "0": {
+          "question": "What kind of packaging will I receive my order in?",
+          "answer": "All MONDIAL items are carefully packaged in our signature blue MONDIAL box, as well as in an elegant paper bag complimentary with any purchase. Every package is made with premium quality materials to match our premium products."
+        },
+        "1": {
+          "question": "How do I know what gift to give to my girlfriend?",
+          "answer": "If you're looking for a gift, you can go to the 'Gift Finder' menu and findproducts that are perfect for any specific occasion. You can always consult with our jewelry representative team to find the perfect gift by contact us."
+        }
+      }
+    },
+    "guarantee": {
+      "title": "GUARANTEE & AUTHENTICITY",
+      "items": {
+        "0": {
+          "question": "How do I know if a MONDIAL diamond is an authentic natural diamond?",
+          "answer": "All MONDIAL diamonds are licensed and guaranteed, and have their own certificates and unique codes."
+        },
+        "1": {
+          "question": "How do I learn more about my guarantee?",
+          "answer": "For items purchased, the completed warranty card will be enclosed with your order. You can always contact us for further information about the guarantee program."
+        },
+        "2": {
+          "question": "Do I get a Diamond Certificate when I purchase MONDIAL?",
+          "answer": "You will get a Jewelry Certificate when you purchase all MONDIAL jewelry. But, if you purchased Branded Diamond Jewelry, you will get an additional physical or digital certificate. For certificate information, you can always contact us."
+        }
+      }
+    },
+    "returns": {
+      "title": "RETURNS & EXCHANGE",
+      "items": {
+        "0": {
+          "question": "How can I resell my MONDIAL jewelry?",
+          "answer": "You can come to the MONDIAL store with the jewelry you have purchased. Don't forget to bring proof of purchase. Please note that we have a buyback and resell policy that must be met before making a transaction. For further information you can always contact us."
+        }
+      }
+    },
+    "covid": {
+      "title": "NOTE ON COVID-19",
+      "items": {
+        "0": {
+          "question": "What precautions are taken in MONDIAL stores to ensure client and employee safety?",
+          "answer": "MONDIAL is committed to protecting its staff and clients, and it has implemented the following national Covid-19 guidelines and protocols. We are currently implementing precautionary steps to limit transmission of Covid-19, including frequent hand washing and regular disinfection of all surfaces and areas throughout the day. To ensure the health and safety of our valued clients, staff, and community, we are limiting the number of people we can welcome in our stores at the same time. Our staff will be wearing facemasks, gloves, and additional protective equipment when applicable. Clients will be required to wear a standard facemask to enter the store, and we also provide facemasks if needed. Hand sanitizer will also be available throughout our stores, and we encourage our guests to use it upon entering the store."
+        }
+      }
+    }
+  }
+}
