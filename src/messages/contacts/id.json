@@ -1,0 +1,24 @@
+{
+  "contactInfo": {
+    "talkWithUs": "Bicara Dengan Kami",
+    "sendEmailNow": "Kirim Email Sekarang"
+  },
+  "questionForm": {
+    "title": "Apakah Anda punya pertanyaan?",
+    "subtitle": "Kirimkan pertanyaan Anda ke email kami.",
+    "fields": {
+      "name": "Nama",
+      "namePlaceholder": "Masukkan Nama Lengkap Anda",
+      "email": "Masukkan Nama",
+      "emailPlaceholder": "Masukkan Alamat Email Anda",
+      "telephone": "Nomor Telepon",
+      "telephonePlaceholder": "+62870123456789 (Contoh)",
+      "subject": "Subjek",
+      "subjectPlaceholder": "Masukkan Subjek",
+      "message": "Pesan",
+      "messagePlaceholder": "Masukkan Pesan Anda"
+    },
+    "authorization": "Saya mengizinkan penggunaan data pribadi saya untuk menerima informasi tentang kreasi baru, acara, inisiatif, dan layanan personal.",
+    "sendMessage": "Kirim Pesan"
+  }
+}

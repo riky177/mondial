@@ -12,10 +12,11 @@ async function loadMessages(locale: string): Promise<MessageObject> {
   const messageModules = {
     common: () => import(`../messages/common/${locale}.json`),
     landing: () => import(`../messages/landing/${locale}.json`),
-    navbar: () => import(`../messages/navbar/${locale}.json`),
     auth: () => import(`../messages/auth/${locale}.json`),
     accounts: () => import(`../messages/accounts/${locale}.json`),
-    mondialPrecious: () => import(`../messages/mondialPrecious/${locale}.json`),
+    contacts: () => import(`../messages/contacts/${locale}.json`),
+    mondialPrecious: () =>
+      import(`../messages/mondial-precious/${locale}.json`),
   };
 
   // Load all message modules

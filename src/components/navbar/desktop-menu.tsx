@@ -13,7 +13,7 @@ import {
 const Menu = () => {
   const [activeMenuTitle, setActiveMenuTitle] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const t = useTranslations('navbar.menu');
+  const t = useTranslations('common.menu');
 
   const handleMouseEnter = (title: string) => {
     setActiveMenuTitle(title);

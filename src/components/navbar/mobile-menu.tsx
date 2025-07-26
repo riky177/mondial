@@ -17,7 +17,7 @@ interface MobileMenuProps {
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
-  const t = useTranslations('navbar.menu');
+  const t = useTranslations('common.menu');
 
   const toggleMenu = (menuTitle: string) => {
     setActiveMenu(activeMenu === menuTitle ? null : menuTitle);

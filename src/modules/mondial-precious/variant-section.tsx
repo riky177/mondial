@@ -19,45 +19,66 @@ const VariantSection = ({
 }: VariantSectionProps) => {
   const t = useTranslations('mondialPrecious');
   const title = t(titleKey);
+  const upperCaseTitle = title.toLocaleUpperCase();
+
+  const hasNegativeMargin = ['GRADIORE', 'FIERTE', 'LUNE'].includes(
+    upperCaseTitle,
+  );
+  const isOpulence = upperCaseTitle === 'OPULENCE';
+  const isAlinate = upperCaseTitle === 'ALINATE';
+
+  // Compute conditional classes
+  const contentContainerClasses = [
+    'flex w-full flex-col items-center md:w-[50%]',
+    isAlinate && 'mt-20',
+    isOpulence && 'mt-[-80px]',
+    index % 2 !== 0 && 'order-none md:order-[-1]',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
+  const textContainerClasses = [
+    'flex flex-col items-center justify-center gap-5 px-2 md:px-0',
+    hasNegativeMargin && 'mt-[-140px]',
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <div className="flex w-full flex-col gap-10 md:gap-20">
-      <div
-        id="arc"
-        className="container flex flex-wrap items-center justify-center gap-7"
-      >
-        <Image
-          src={mainImage}
-          alt={`Mondial ${title}`}
-          className="border-2 border-[#77B8D4] md:hidden"
-          width={352}
-          height={466}
-        />
-        <Image
-          src={mainImage}
-          alt={`Mondial ${title}`}
-          className="hidden border-2 border-[#77B8D4] md:block"
-          width={540}
-          height={716}
-        />
-        <div
-          className={`flex w-full flex-col items-center justify-center md:w-[50%] ${index % 2 !== 0 ? 'order-none md:order-[-1]' : ''}`}
-        >
+      <div id="arc" className="container flex flex-wrap justify-center gap-7">
+        <div>
+          <Image
+            src={mainImage}
+            alt={`Mondial ${title}`}
+            className="border-2 border-[#77B8D4] md:hidden"
+            width={352}
+            height={466}
+          />
+          <Image
+            src={mainImage}
+            alt={`Mondial ${title}`}
+            className="hidden border-2 border-[#77B8D4] md:block"
+            width={540}
+            height={716}
+          />
+        </div>
+        <div className={contentContainerClasses}>
           <Image
             src={secondImage}
             alt={`Mondial ${title}`}
-            className="md:hidden"
+            className="pb-10 md:hidden"
             width={352}
             height={215}
           />
           <Image
             src={secondImage}
             alt={`Mondial ${title}`}
-            className="hidden md:block"
+            className="hidden pb-10 md:block"
             width={540}
             height={330}
           />
-          <div className="flex flex-col items-center justify-center gap-5 px-2 md:px-0">
+          <div className={textContainerClasses}>
             <h2 className="text-center font-trajan-bold text-[32px] md:text-[40px]">
               {title}
             </h2>
@@ -72,7 +93,7 @@ const VariantSection = ({
             ))}
             <Link
               href="/products/mondial-precious"
-              className="font-montserrat mt-5 bg-primary px-[60px] py-1 text-2xl font-light italic text-black"
+              className="font-montserrat mt-5 bg-primary px-[60px] py-1 text-base font-light italic text-black md:text-2xl"
             >
               {t('discover')}
             </Link>
@@ -83,22 +104,26 @@ const VariantSection = ({
         id={`${title.toLowerCase()}-images`}
         className="container hidden items-center justify-center gap-5 md:flex"
       >
-        {items.map((subItem, subIndex) => (
-          <div
-            className={`flex max-w-[${90 / items.length}%] w-full flex-col items-center justify-center`}
-            key={subIndex}
-          >
-            <Image
-              src={subItem.image}
-              alt={`Mondial ${title} ${subItem.descriptionKey ? t(subItem.descriptionKey) : ''}`}
-              width={331}
-              height={412}
-            />
-            <p className="text-center text-[22px] uppercase">
-              {subItem.descriptionKey ? t(subItem.descriptionKey) : ''}
-            </p>
-          </div>
-        ))}
+        {items.map((subItem, subIndex) => {
+          const maxWidthPercentage = 90 / items.length;
+          return (
+            <div
+              className="flex w-full flex-col items-center justify-center"
+              style={{ maxWidth: `${maxWidthPercentage}%` }}
+              key={subIndex}
+            >
+              <Image
+                src={subItem.image}
+                alt={`Mondial ${title} ${subItem.descriptionKey ? t(subItem.descriptionKey) : ''}`}
+                width={331}
+                height={412}
+              />
+              <p className="text-center text-[22px] uppercase">
+                {subItem.descriptionKey ? t(subItem.descriptionKey) : ''}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

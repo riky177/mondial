@@ -1,0 +1,24 @@
+{
+  "contactInfo": {
+    "talkWithUs": "Talk With Us",
+    "sendEmailNow": "Send Us Email Now"
+  },
+  "questionForm": {
+    "title": "Do you have a question?",
+    "subtitle": "Send us your questions to our email.",
+    "fields": {
+      "name": "Name",
+      "namePlaceholder": "Insert Your Full Name",
+      "email": "Enter Name",
+      "emailPlaceholder": "Insert Your Email Address",
+      "telephone": "Telephone Number",
+      "telephonePlaceholder": "+62870123456789 (Example)",
+      "subject": "Subject",
+      "subjectPlaceholder": "Enter Subject",
+      "message": "Message",
+      "messagePlaceholder": "Enter Your Message"
+    },
+    "authorization": "I authorize the use of my personal data to receive information about new creations, events, initiatives and personal services.",
+    "sendMessage": "Send Message"
+  }
+}
