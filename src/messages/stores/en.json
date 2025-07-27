@@ -1,0 +1,11 @@
+{
+  "title": "STORE LOCATIONS",
+  "allStores": "ALL STORES",
+  "selectCity": "Select City",
+  "selectStore": "Select Store",
+  "contactInfo": {
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "LOKASI TOKO",
+  "allStores": "SEMUA TOKO",
+  "selectCity": "Pilih Kota",
+  "selectStore": "Pilih Toko",
+  "contactInfo": {
+    "phone": "Telepon",
+    "email": "Email",
+    "address": "Alamat"
+  }
+}

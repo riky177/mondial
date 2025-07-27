@@ -6,14 +6,14 @@ type ContactsLayoutProps = {
   children: React.ReactNode;
 };
 
-const FaqLayout = ({ children }: ContactsLayoutProps) => {
+const StoresLayout = ({ children }: ContactsLayoutProps) => {
   return (
     <div>
       <HeaderWithBreadcrumbs
-        title="Question & Answer"
+        title="Store Locations"
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'FAQ', href: '/faq', isActive: true },
+          { label: 'Store Locations', href: '/stores', isActive: true },
         ]}
       />
       {children}
@@ -21,4 +21,4 @@ const FaqLayout = ({ children }: ContactsLayoutProps) => {
   );
 };
 
-export default FaqLayout;
+export default StoresLayout;
