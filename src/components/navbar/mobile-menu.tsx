@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { HiOutlineChevronDown, HiOutlineChevronUp } from 'react-icons/hi';
@@ -51,14 +52,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
                     </div>
                   )}
                   {sub.detail_menu.map((detail) => (
-                    <a
+                    <Link
                       key={detail.title}
                       href={detail.href}
                       className="block py-2 pl-4 text-sm text-secondary hover:text-primary"
                       onClick={onItemClick}
                     >
                       {getTranslatedDetailTitle(t, detail.title)}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               ))}

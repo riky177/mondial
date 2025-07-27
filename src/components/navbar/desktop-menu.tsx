@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 
@@ -54,13 +55,13 @@ const Menu = () => {
                   {getTranslatedSubTitle(t, sub.title)}
                 </div>
                 {sub.detail_menu.map((detail) => (
-                  <a
+                  <Link
                     key={detail.title}
                     href={detail.href}
                     className="underline-hover block w-fit px-2 py-2 font-red-hat text-xxs text-tertiary"
                   >
                     {getTranslatedDetailTitle(t, detail.title)}
-                  </a>
+                  </Link>
                 ))}
               </div>
             ),

@@ -13,7 +13,7 @@ const ContactsLayout = ({ children }: ContactsLayoutProps) => {
         title="CONTACT US"
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'Contact Us', href: '/contact', isActive: true },
+          { label: 'Contact Us', href: '/contacts', isActive: true },
         ]}
       />
       {children}

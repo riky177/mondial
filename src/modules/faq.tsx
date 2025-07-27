@@ -114,7 +114,7 @@ const Faq = () => {
   );
 
   return (
-    <div className="mx-auto max-w-[770px] px-5 pb-20 pt-5 md:px-0">
+    <div className="container-sm px-5 pb-20 pt-5 md:px-0">
       <div className="faq">
         {faqData.map((section, sectionIndex) => (
           <div key={sectionIndex} className="py-4">

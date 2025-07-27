@@ -11,7 +11,7 @@ const QuestionForm = () => {
   const tFields = useTranslations('contacts.questionForm.fields');
 
   return (
-    <div className="mx-auto mt-5 flex max-w-[770px] flex-col items-center justify-center md:mt-[70px]">
+    <div className="container-sm mt-5 flex flex-col items-center justify-center md:mt-[70px]">
       <IoDiamondOutline
         color="var(--color-primary)"
         size={44}

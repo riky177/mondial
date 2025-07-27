@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+import Link from 'next/link';
 import React from 'react';
 
 export type BreadcrumbItem = {
@@ -9,24 +11,27 @@ export type BreadcrumbItem = {
 
 type BreadcrumbsProps = {
   items: BreadcrumbItem[];
+  className?: string;
 };
 
-const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
+const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
   return (
-    <div>
+    <div className={clsx('flex', className)}>
       {items.map((item, index) => (
-        <span key={index}>
+        <span key={index} className="flex items-center">
           {item.isDisabled ? (
-            <span className="font-trajan-bold text-xs text-tertiary">
+            <span className="max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap font-trajan-bold text-xs text-tertiary">
               {item.label}
             </span>
           ) : (
-            <a
-              href={item.href}
-              className={`font-trajan-bold text-xs hover:text-primary ${item.isActive ? 'text-primary' : 'text-tertiary'} uppercase`}
-            >
-              {item.label}
-            </a>
+            <div className="max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap">
+              <Link
+                href={item.href}
+                className={`font-trajan-bold text-xs uppercase hover:text-primary ${item.isActive ? 'text-primary' : 'text-tertiary'} `}
+              >
+                {item.label}
+              </Link>
+            </div>
           )}
           {index < items.length - 1 && (
             <span className="px-[6px] font-trajan-bold text-xs text-tertiary">

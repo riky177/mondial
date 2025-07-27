@@ -2,18 +2,18 @@ import React from 'react';
 
 import HeaderWithBreadcrumbs from '@/components/header-with-breadcrumbs';
 
-type FaqLayoutProps = {
+type StoriesLayoutProps = {
   children: React.ReactNode;
 };
 
-const FaqLayout = ({ children }: FaqLayoutProps) => {
+const StoriesLayout = ({ children }: StoriesLayoutProps) => {
   return (
     <div>
       <HeaderWithBreadcrumbs
-        title="Question & Answer"
+        title="News & Stories"
         breadcrumbs={[
           { label: 'Home', href: '/' },
-          { label: 'FAQ', href: '/faq', isActive: true },
+          { label: 'News & Stories', href: '/stories/all', isActive: true },
         ]}
       />
       {children}
@@ -21,4 +21,4 @@ const FaqLayout = ({ children }: FaqLayoutProps) => {
   );
 };
 
-export default FaqLayout;
+export default StoriesLayout;

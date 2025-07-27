@@ -2,11 +2,11 @@ import React from 'react';
 
 import HeaderWithBreadcrumbs from '@/components/header-with-breadcrumbs';
 
-type ContactsLayoutProps = {
+type StoresLayoutProps = {
   children: React.ReactNode;
 };
 
-const StoresLayout = ({ children }: ContactsLayoutProps) => {
+const StoresLayout = ({ children }: StoresLayoutProps) => {
   return (
     <div>
       <HeaderWithBreadcrumbs

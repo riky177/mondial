@@ -24,7 +24,7 @@ const Footer = () => {
     { title: t('footer.storeLocation'), href: '/stores' },
     { title: t('footer.stories'), href: '/stories/all' },
     {
-      title: t('footer.shippingReturnPolicy'),
+      title: t('footer.career'),
       href: 'https://www.linkedin.com/company/centralmegakencana/',
     },
   ];
