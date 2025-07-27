@@ -59,6 +59,7 @@ const Menu = () => {
                     key={detail.title}
                     href={detail.href}
                     className="underline-hover block w-fit px-2 py-2 font-red-hat text-xxs text-tertiary"
+                    onClick={() => setIsVisible(false)}
                   >
                     {getTranslatedDetailTitle(t, detail.title)}
                   </Link>

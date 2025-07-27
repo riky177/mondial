@@ -44,8 +44,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ onItemClick }) => {
 
           {activeMenu === menu.title && (
             <div className="bg-gray-50 pb-2">
-              {menu.sub_menu.map((sub) => (
-                <div key={sub.title} className="px-4 py-2">
+              {menu.sub_menu.map((sub, key) => (
+                <div key={key} className="px-4 py-2">
                   {sub.title && (
                     <div className="mb-2 text-sm font-bold text-gray-800">
                       {getTranslatedSubTitle(t, sub.title)}

@@ -11,7 +11,7 @@ const Articles = () => {
   const params = useParams();
   const articleId = params.id as string;
   return (
-    <div className="container-lg flex flex-col items-center justify-center">
+    <div className="container-lg flex flex-col items-center justify-center px-5 md:px-0">
       <Breadcrumbs
         items={[
           { label: 'Home', href: '/' },

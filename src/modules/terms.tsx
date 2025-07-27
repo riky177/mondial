@@ -7,7 +7,7 @@ const Terms = () => {
   const t = useTranslations('terms');
 
   return (
-    <div className="container-sm w-full pb-40 pt-2 font-red-hat font-light">
+    <div className="container-sm w-full px-5 pb-40 pt-2 font-red-hat font-light md:px-0">
       <div className="terms-wrapper">
         <div className="list">
           <h2 className="mb-[15px] mt-10 text-lg font-medium md:mb-5 md:text-xl">

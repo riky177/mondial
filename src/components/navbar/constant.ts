@@ -152,7 +152,7 @@ export const MENU: MenuType[] = [
     sub_menu: [
       {
         detail_menu: [
-          { title: 'ARTICLES', href: '/stories/articles' },
+          { title: 'ARTICLES', href: '/stories/all' },
           {
             title: 'PRESS RELEASE',
             href: 'https://centralmegakencana.com/news/?category=press%20release',

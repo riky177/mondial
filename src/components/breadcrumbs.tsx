@@ -24,7 +24,7 @@ const Breadcrumbs = ({ items, className }: BreadcrumbsProps) => {
               {item.label}
             </span>
           ) : (
-            <div className="max-w-[200px] overflow-hidden text-ellipsis whitespace-nowrap">
+            <div className="elipsis-one-line max-w-[300px]">
               <Link
                 href={item.href}
                 className={`font-trajan-bold text-xs uppercase hover:text-primary ${item.isActive ? 'text-primary' : 'text-tertiary'} `}
