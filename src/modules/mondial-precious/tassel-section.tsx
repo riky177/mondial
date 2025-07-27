@@ -44,12 +44,12 @@ const TasselSection = () => {
             <h2 className="text-center font-trajan-bold text-[32px] md:text-[40px]">
               {t('tasselTitle')}
             </h2>
-            <p className="font-montserrat px-2 text-center text-sm font-light md:px-0 md:text-xl">
+            <p className="px-2 text-center font-montserrat text-sm font-light md:px-0 md:text-xl">
               {t('tasselDescription')}
             </p>
             <Link
               href="/products/mondial-precious"
-              className="font-montserrat mt-5 bg-primary px-[60px] py-1 text-2xl font-light italic text-black"
+              className="mt-5 bg-primary px-[60px] py-1 font-montserrat text-2xl font-light italic text-black"
             >
               {t('discover')}
             </Link>

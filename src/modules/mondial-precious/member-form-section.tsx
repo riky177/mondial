@@ -29,17 +29,17 @@ const MemberFormSection = () => {
       <div className="w-full">
         <label className="font-montserrat">{t('phoneLabel')}</label>
         <div className="flex w-full gap-1 bg-white px-2 py-2">
-          <div className="font-montserrat border-r-[1px] border-r-gray-200 px-2 text-tertiary">
+          <div className="border-r-[1px] border-r-gray-200 px-2 font-montserrat text-tertiary">
             +62
           </div>
           <input
             type="number"
             placeholder={t('phonePlaceholder')}
-            className="font-montserrat w-full text-black outline-none"
+            className="w-full font-montserrat text-black outline-none"
           />
         </div>
       </div>
-      <button className="font-montserrat w-full bg-primary px-[60px] py-1 text-2xl font-light italic text-black">
+      <button className="w-full bg-primary px-[60px] py-1 font-montserrat text-2xl font-light italic text-black">
         {t('discover')}
       </button>
     </div>

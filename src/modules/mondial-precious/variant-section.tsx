@@ -86,14 +86,14 @@ const VariantSection = ({
             {descriptionKeys.map((descKey, idx) => (
               <p
                 key={idx}
-                className="font-montserrat px-2 text-center text-sm font-light md:px-0 md:text-xl"
+                className="px-2 text-center font-montserrat text-sm font-light md:px-0 md:text-xl"
               >
                 {t(descKey)}
               </p>
             ))}
             <Link
               href="/products/mondial-precious"
-              className="font-montserrat mt-5 bg-primary px-[60px] py-1 text-base font-light italic text-black md:text-2xl"
+              className="mt-5 bg-primary px-[60px] py-1 font-montserrat text-base font-light italic text-black md:text-2xl"
             >
               {t('discover')}
             </Link>

@@ -6,7 +6,7 @@ export default function LanguageSwitcher() {
   const { currentLocale, isPending, switchLanguage } = useLanguageSwitcher();
 
   return (
-    <div className="font-trajan-bold flex items-center">
+    <div className="flex items-center font-trajan-bold">
       <button
         onClick={() => switchLanguage('id')}
         disabled={isPending}

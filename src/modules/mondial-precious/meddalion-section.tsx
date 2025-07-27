@@ -30,7 +30,7 @@ const MedallionSection = () => {
         />
         <Link
           href="/products/mondial-precious"
-          className="font-montserrat mt-5 bg-primary px-[60px] py-1 text-2xl font-light italic text-black"
+          className="mt-5 bg-primary px-[60px] py-1 font-montserrat text-2xl font-light italic text-black"
         >
           {t('discover')}
         </Link>
@@ -50,10 +50,10 @@ const MedallionSection = () => {
           width={559}
           height={420}
         />
-        <p className="font-montserrat mt-5 px-5 text-center text-sm font-light md:p-0 md:text-left md:text-xl">
+        <p className="mt-5 px-5 text-center font-montserrat text-sm font-light md:p-0 md:text-left md:text-xl">
           {t('medallionDescription1')}
         </p>
-        <p className="font-montserrat mt-5 px-5 text-center text-sm font-light md:p-0 md:text-left md:text-xl">
+        <p className="mt-5 px-5 text-center font-montserrat text-sm font-light md:p-0 md:text-left md:text-xl">
           {t('medallionDescription2')}
         </p>
       </div>

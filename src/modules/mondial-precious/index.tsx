@@ -39,7 +39,7 @@ const MondialPrecious = () => {
       ))}
       <FuturedArticles />
 
-      <div className="font-montserrat w-full bg-white p-2.5 text-center text-xs font-light text-black md:text-base">
+      <div className="w-full bg-white p-2.5 text-center font-montserrat text-xs font-light text-black md:text-base">
         {t('copyright')}
       </div>
     </div>
