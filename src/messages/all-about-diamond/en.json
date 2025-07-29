@@ -1,0 +1,23 @@
+{
+  "color": {
+    "title": "COLOR",
+    "description1": "The most common diamond colour is yellow and brown. These diamonds are valued by how colourless they are. The less the colour, the more the value.",
+    "description2": "Diamond colour is graded according to a grading scale. Most diamonds have a slight hint of yellow and generally the diamond colour scale is based on the amount of yellow present in a diamond. World widely accepted colour grading system in this industry is the scale which begins with the grade D (colourless) and continues with increasing presence of colour, to grade Z. Even slight colour differences will make a very big difference in diamond quality and price.",
+    "description3": "It is extremely difficult to see the colour differences within diamonds. It requires certain skill, controlled lighting, and definite viewing condition."
+  },
+  "clarity": {
+    "title": "Clarity",
+    "description1": "The diamond's clarity is a description of its internal purity due to its creation process. With fewer characteristic presence within the stone, the diamond is more rare and posses a higher value.",
+    "description2": "Refer to the international applied clarity grading scale, diamonds are given a clarity grade that ranges from Flawless (FL) to diamonds with more prominent character inside the diamond (I3). All diamonds are systematically graded and plotted under 10X magnification."
+  },
+  "cut": {
+    "title": "CUT",
+    "description1": "Most diamonds are cut to round shape with 57/58 facets. An excellent cut determines the diamond's maximization and balance of it's brilliance, fire, and scintillation.",
+    "description2": "It is the work of a master cutter that allows the diamond to be cut in such a way as to permit the maximum amount of light to be reflected through the diamond. It is the cut that enables a diamond to make the best use of light"
+  },
+  "caratWeight": {
+    "title": "Carat Weight",
+    "description1": "Carat is the standard weight measuring unit for diamonds and other gemstones. It takes its name from the carob seed. Because these small seeds had a fairly uniform weight, early gem traders used them as counterweights in their balance scales.",
+    "description2": "A carat is equal to 0.2 grams. Within the diamond trade, fractions of a carat are referred to as points. One carat is divided into 100 points, each point is 1/100th of a carat. A 10-point diamond weighs 1/10th of a carat, and a 50-point stone weighs one-half carat."
+  }
+}

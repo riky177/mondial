@@ -1,0 +1,23 @@
+{
+  "color": {
+    "title": "WARNA",
+    "description1": "Warna berlian yang paling umum adalah kuning dan coklat. Berlian-berlian ini dinilai berdasarkan seberapa tidak berwarna mereka. Semakin sedikit warnanya, semakin tinggi nilainya.",
+    "description2": "Warna berlian dinilai berdasarkan skala penilaian. Sebagian besar berlian memiliki sedikit nuansa kuning dan umumnya skala warna berlian didasarkan pada jumlah warna kuning yang ada dalam berlian. Sistem penilaian warna yang diterima secara luas di industri ini adalah skala yang dimulai dengan grade D (tidak berwarna) dan berlanjut dengan peningkatan kehadiran warna, hingga grade Z. Bahkan perbedaan warna yang sedikit akan membuat perbedaan yang sangat besar dalam kualitas dan harga berlian.",
+    "description3": "Sangat sulit untuk melihat perbedaan warna dalam berlian. Ini memerlukan keterampilan tertentu, pencahayaan yang terkontrol, dan kondisi pengamatan yang pasti."
+  },
+  "clarity": {
+    "title": "Kejernihan",
+    "description1": "Kejernihan berlian adalah deskripsi kemurnian internal berlian karena proses penciptaannya. Dengan semakin sedikit kehadiran karakteristik dalam batu, berlian menjadi lebih langka dan memiliki nilai yang lebih tinggi.",
+    "description2": "Mengacu pada skala penilaian kejernihan yang diterapkan secara internasional, berlian diberi grade kejernihan yang berkisar dari Flawless (FL) hingga berlian dengan karakter yang lebih menonjol di dalam berlian (I3). Semua berlian dinilai dan diplot secara sistematis di bawah perbesaran 10X."
+  },
+  "cut": {
+    "title": "POTONGAN",
+    "description1": "Sebagian besar berlian dipotong menjadi bentuk bulat dengan 57/58 segi. Potongan yang sangat baik menentukan maksimalisasi dan keseimbangan kecemerlangan, api, dan kilau berlian.",
+    "description2": "Adalah pekerjaan dari seorang pemotong ahli yang memungkinkan berlian dipotong sedemikian rupa sehingga memungkinkan jumlah cahaya maksimum dipantulkan melalui berlian. Potongan itulah yang memungkinkan berlian memanfaatkan cahaya dengan sebaik-baiknya"
+  },
+  "caratWeight": {
+    "title": "Berat Karat",
+    "description1": "Karat adalah unit pengukuran berat standar untuk berlian dan batu mulia lainnya. Nama ini diambil dari biji carob. Karena biji-biji kecil ini memiliki berat yang cukup seragam, pedagang permata awal menggunakannya sebagai penyeimbang dalam timbangan mereka.",
+    "description2": "Satu karat sama dengan 0,2 gram. Dalam perdagangan berlian, pecahan karat disebut sebagai poin. Satu karat dibagi menjadi 100 poin, setiap poin adalah 1/100 dari satu karat. Berlian 10 poin beratnya 1/10 karat, dan batu 50 poin beratnya setengah karat."
+  }
+}

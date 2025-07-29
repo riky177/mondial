@@ -139,7 +139,7 @@ export const MENU: MenuType[] = [
         detail_menu: [
           {
             title: "THE 4 C'S OF DIAMONDS",
-            href: '/all-about-diamonds',
+            href: '/all-about-diamond',
           },
           { title: 'RING SIZE GUIDE', href: '/size-guide' },
         ],
