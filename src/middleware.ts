@@ -19,6 +19,7 @@ export default async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const isAuthPage = pathname.includes('/auth/');
   const isAccountsPage = pathname.includes('/accounts/');
+  const isWishlistPage = pathname.includes('/wishlist/');
 
   // Get user token for authentication checks
   const token = await getToken({
@@ -38,7 +39,7 @@ export default async function middleware(request: NextRequest) {
     }
   }
 
-  if (isAccountsPage) {
+  if (isAccountsPage || isWishlistPage) {
     // If user doesn't have a session and is trying to access accounts pages, redirect to login
     if (!token) {
       const url = request.nextUrl.clone();
@@ -58,8 +59,13 @@ export default async function middleware(request: NextRequest) {
 export const config = {
   // Match only internationalized pathnames
   matcher: [
-    '/',
-    '/(id|en)/:path*',
+    // Match all pathnames except for those starting with:
+    // - api (API routes)
+    // - _next/static (static files)
+    // - _next/image (image optimization files)
+    // - favicon.ico (favicon file)
+    // - global (global assets)
+    // - fonts (font files)
     '/((?!api|_next/static|_next/image|favicon.ico|global|fonts).*)',
   ],
 };

@@ -6,6 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import type { Metadata } from 'next';
 
 import Providers from '@/components/providers';
+import { defaultLocale } from '@/i18n/config';
 
 export const metadata: Metadata = {
   title: 'Luxury Diamond Jewellery, Accessories and Gifts - Mondial',
@@ -13,13 +14,13 @@ export const metadata: Metadata = {
     'MONDIAL is a luxury diamond jewellery brand in Indonesia, with bold designs that give you a distinctive character and identity to stand out from the rest.',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    <html lang={defaultLocale}>
       <body className="antialiased">
         <Providers>{children}</Providers>
       </body>
