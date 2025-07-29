@@ -20,6 +20,7 @@ async function loadMessages(locale: string): Promise<MessageObject> {
     faq: () => import(`../messages/faq/${locale}.json`),
     terms: () => import(`../messages/terms/${locale}.json`),
     stores: () => import(`../messages/stores/${locale}.json`),
+    sizeGuide: () => import(`../messages/size-guide/${locale}.json`),
   };
 
   // Load all message modules

@@ -17,35 +17,31 @@ export const useLanguageSwitcher = () => {
 
       startTransition(() => {
         try {
-          // Method 1: Try client-side router first
+          // Use the next-intl router which handles locale switching properly
           router.push(pathname, { locale: newLocale });
-
-          // Method 2: Fallback to window.location after a short delay
-          setTimeout(() => {
-            if (window.location.pathname.includes(`/${currentLocale}`)) {
-              const currentPath = window.location.pathname;
-              const searchParams = window.location.search;
-              const hash = window.location.hash;
-
-              // Replace current locale with new locale in the path
-              const newPath = currentPath.replace(
-                `/${currentLocale}`,
-                `/${newLocale}`,
-              );
-              const finalPath = newPath.startsWith(`/${newLocale}`)
-                ? newPath
-                : `/${newLocale}${currentPath.replace(`/${currentLocale}`, '')}`;
-
-              window.location.href = finalPath + searchParams + hash;
-            }
-          }, 100);
         } catch (error) {
           console.error('Language switch error:', error);
-          // Fallback: force reload with new locale
-          const newUrl = window.location.href.replace(
-            `/${currentLocale}/`,
-            `/${newLocale}/`,
-          );
+          // Fallback: manual URL construction only if router fails
+          const currentPath = window.location.pathname;
+          const searchParams = window.location.search;
+          const hash = window.location.hash;
+
+          // Remove any existing locale from the path
+          let pathWithoutLocale = currentPath;
+          for (const locale of ['en', 'id']) {
+            if (pathWithoutLocale.startsWith(`/${locale}/`)) {
+              pathWithoutLocale = pathWithoutLocale.substring(
+                `/${locale}`.length,
+              );
+              break;
+            } else if (pathWithoutLocale === `/${locale}`) {
+              pathWithoutLocale = '/';
+              break;
+            }
+          }
+
+          // Construct new URL with the target locale
+          const newUrl = `/${newLocale}${pathWithoutLocale}${searchParams}${hash}`;
           window.location.href = newUrl;
         }
       });

@@ -1,0 +1,19 @@
+{
+  "title": "UKUR UKURAN CINCIN ANDA DENGAN MUDAH DI RUMAH",
+  "usingString": "Menggunakan Tali",
+  "description": "Ini mungkin bukan pengukuran yang paling akurat. tapi ini salah satu cara yang paling sederhana",
+  "steps": {
+    "step1": "1. Ambil tali atau benang gigi dan bungkus di sekitar pangkal jari Anda.",
+    "step2": "2. Tandai dengan pena dan sejajarkan dengan penggaris, catat panjangnya dalam milimeter.",
+    "step3": "3. Gunakan tabel di bawah ini untuk mengetahui ukuran cincin Anda."
+  },
+  "table": {
+    "size": "Ukuran",
+    "circumference": "Keliling (mm)",
+    "diameter": "Diameter (mm)"
+  },
+  "tips": {
+    "tip1": "Tips: Ulangi 3-4 kali untuk pengukuran yang lebih presisi. Jangan paksa tali terlalu kencang.",
+    "tip2": "Ukur jari Anda di malam hari saat hangat. Jari cenderung menyusut di pagi hari."
+  }
+}

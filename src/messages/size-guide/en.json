@@ -1,0 +1,19 @@
+{
+  "title": "MEASURE YOUR RING SIZE EASILY AT HOME",
+  "usingString": "Using String",
+  "description": "This may not be the most accurate measurement. but it's one of the simplest ways",
+  "steps": {
+    "step1": "1. Pick a string or floss and wrap it around the base of your finger.",
+    "step2": "2. Mark it with a pen and line that up with a ruler, take down the length in milimeters.",
+    "step3": "3. Use the table below to know your ring size."
+  },
+  "table": {
+    "size": "Size",
+    "circumference": "Circumference (mm)",
+    "diameter": "Diameter (mm)"
+  },
+  "tips": {
+    "tip1": "Tip: Repeat 3-4 times for a more precise measurement. Try not to force your string too tight.",
+    "tip2": "Measure your fingers at night when they're warm. Fingers tend to shrink in the morning."
+  }
+}

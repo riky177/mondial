@@ -75,13 +75,13 @@ const Footer = () => {
           <table className="w-full table-auto">
             <thead>
               <tr>
-                <th className="pb-3 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
+                <th className="pb-3 pr-4 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
                   {t('footer.customerService')}
                 </th>
-                <th className="pb-3 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
+                <th className="pb-3 pr-4 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
                   {t('footer.information')}
                 </th>
-                <th className="pb-3 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
+                <th className="pb-3 pr-4 text-left align-top text-[13px] font-bold md:pb-8 md:text-base">
                   {t('footer.followUs')}
                 </th>
               </tr>
