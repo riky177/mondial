@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import React from 'react';
 
+import FloatingWatsapp from './floating-whatsapp';
 import Footer from './footer';
 import Navbar from './navbar';
 import SectionWhy from './section-why';
@@ -21,6 +22,7 @@ const Container = ({ children }: ContainerProps) => {
       {children}
       {!isMondialPreciousPage && <SectionWhy />}
       {!isMondialPreciousPage && <Footer />}
+      <FloatingWatsapp />
     </div>
   );
 };

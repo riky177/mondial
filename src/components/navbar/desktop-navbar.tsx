@@ -71,7 +71,9 @@ const DesktopNavbar = () => {
               {t('signin')} / {t('signup')}
             </Link>
           )}
-          <CiHeart color="var(--color-primary)" size={16} />
+          <Link href="/wishlist" className="text-xs text-secondary">
+            <CiHeart color="var(--color-primary)" size={16} />
+          </Link>
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-center pt-3">
