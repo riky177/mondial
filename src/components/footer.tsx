@@ -114,7 +114,7 @@ const Footer = () => {
                   ))}
                 </td>
                 <td className="align-top">
-                  <div className="flex gap-4 md:flex md:gap-0 md:space-x-4">
+                  <div className="flex gap-2 md:flex md:gap-0 md:gap-x-4">
                     <Link
                       href="https://www.instagram.com/centralmegakencana/"
                       target="_blank"
