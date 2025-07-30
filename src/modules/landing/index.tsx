@@ -50,7 +50,6 @@ const Landing = () => {
       </Link>
       <Link href="/mondial-blue-house" className="w-full">
         <video
-          src="https://production-mondial.stamps.id/media/videos/2024/12/11/Web_Banner_3D_Video_Blak_1440680_Frame_1.webm"
           controls={false}
           autoPlay
           loop
@@ -58,7 +57,12 @@ const Landing = () => {
           playsInline
           webkit-playsinline="true"
           className="mb-10 h-auto w-full object-cover md:mb-20"
-        />
+        >
+          <source
+            src="https://production-mondial.stamps.id/media/videos/2024/12/11/Web_Banner_3D_Video_Blak_1440680_Frame_1.webm"
+            type="video/webm"
+          />
+        </video>
       </Link>
       <SectionExplores />
       <SectionCollection />

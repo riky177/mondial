@@ -48,6 +48,18 @@ const MobileNavbar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMenuOpen]);
+
   return (
     <div className="border-b-[1px] border-solid border-b-gray-200 text-secondary">
       <div className="relative flex w-full items-center justify-between p-4">
@@ -96,8 +108,8 @@ const MobileNavbar = () => {
       </div>
       <div>
         {isMenuOpen && (
-          <div className="fixed inset-0 top-0 z-50 bg-white py-5">
-            <div className="flex w-full flex-col px-5">
+          <div className="fixed inset-0 top-0 z-50 flex flex-col bg-white">
+            <div className="flex w-full shrink-0 flex-col px-5 py-5">
               <button
                 onClick={toggleMenu}
                 aria-label="Close menu"
@@ -105,11 +117,11 @@ const MobileNavbar = () => {
               >
                 <HiOutlineX size={24} />
               </button>
-              <div className="overflow-y-auto">
-                <MobileMenu onItemClick={() => setIsMenuOpen(false)} />
-              </div>
             </div>
-            <div className="flex items-center border-y-[1px] border-gray-200 px-5 py-4">
+            <div className="flex-1 overflow-y-auto px-5">
+              <MobileMenu onItemClick={() => setIsMenuOpen(false)} />
+            </div>
+            <div className="flex shrink-0 items-center border-y-[1px] border-gray-200 px-5 py-4">
               <IoPersonOutline size={18} />
               <span className="ml-4" onClick={toggleMenu}>
                 {session.status === 'authenticated' ? (
@@ -123,7 +135,7 @@ const MobileNavbar = () => {
                 )}
               </span>
             </div>
-            <div className="p-5 pt-7">
+            <div className="shrink-0 p-5 pt-7">
               <LanguageSwitcher />
             </div>
           </div>
