@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import HeaderWithBreadcrumbs from '@/components/header-with-breadcrumbs';
@@ -63,7 +64,8 @@ const Products = () => {
         <ProductWithFilter priceFilter={false}>
           <div className="flex w-full flex-wrap justify-center gap-2 md:justify-start">
             {DATA.map((item) => (
-              <div
+              <Link
+                href={`/products/engagement-rings/${item.id}`}
                 key={item.id}
                 className="group flex w-full max-w-[170px] cursor-pointer flex-col items-center justify-center space-y-2 p-3 transition-transform duration-300 ease-in-out hover:scale-110 hover:border-[1px] hover:border-gray-200 md:max-w-[258px]"
               >
@@ -92,7 +94,7 @@ const Products = () => {
                     View Details
                   </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </ProductWithFilter>

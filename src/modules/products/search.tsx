@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import React from 'react';
 
@@ -43,7 +44,7 @@ const Search = () => {
   return (
     <div className="container pt-10">
       <ProductWithFilter>
-        <div>
+        <div className="px-4">
           <p className="mb-7 font-red-hat font-light md:text-xl">
             We found <strong>{DATA.length}</strong> result for{' '}
             <strong>&quot;{query}&quot;</strong>
@@ -59,7 +60,8 @@ const Search = () => {
       </div> */}
           <div className="flex flex-wrap gap-2">
             {DATA.map((item) => (
-              <div
+              <Link
+                href={`/products/earings/${item.id}`}
                 key={item.id}
                 className="group flex w-full max-w-[170px] cursor-pointer flex-col items-center justify-center space-y-2 p-3 transition-transform duration-300 ease-in-out hover:scale-110 hover:border-[1px] hover:border-gray-200 md:max-w-[258px]"
               >
@@ -88,7 +90,7 @@ const Search = () => {
                     View Details
                   </button>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
