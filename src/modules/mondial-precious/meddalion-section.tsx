@@ -11,7 +11,7 @@ const MedallionSection = () => {
       className="container flex flex-col items-center gap-5 md:flex-row"
     >
       <div className="order-1 flex w-full max-w-full flex-col items-center justify-center md:order-none md:max-w-[50%]">
-        <h2 className="text-center font-trajan-bold text-[32px] md:text-[40px]">
+        <h2 className="text-center font-trajan-bold text-4xl md:text-[40px]">
           {t('medallionTitle')}
         </h2>
         <Image

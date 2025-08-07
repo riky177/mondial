@@ -33,7 +33,7 @@ const MondialBlueHouse = () => {
       <div className="mb-5 flex flex-col items-center justify-center gap-y-5 md:mb-10 md:flex-row">
         <div className="order-1 flex flex-1 items-center justify-center px-4 md:order-none">
           <div className="gap- flex max-w-[400px] flex-col gap-y-5 md:gap-y-6">
-            <h2 className="text-center font-trajan-bold text-[32px]">
+            <h2 className="text-center font-trajan-bold text-4xl">
               {t('timelessCollection.title')}
             </h2>
             <p className="text-center font-red-hat text-sm font-light md:text-base">
@@ -69,7 +69,7 @@ const MondialBlueHouse = () => {
         </div>
         <div className="flex flex-1 items-center justify-center px-4">
           <div className="gap- flex max-w-[400px] flex-col gap-y-5 md:gap-y-6">
-            <h2 className="text-center font-trajan-bold text-[32px]">
+            <h2 className="text-center font-trajan-bold text-4xl">
               {t('mensJewelry.title')}
             </h2>
             <p className="text-center font-red-hat text-sm font-light md:text-base">
@@ -93,7 +93,7 @@ const MondialBlueHouse = () => {
           className="h-auto w-full"
         />
         <div className="mx-auto flex w-full max-w-[800px] flex-col justify-center px-4 md:px-0">
-          <h2 className="text-center font-trajan-bold text-[32px]">
+          <h2 className="text-center font-trajan-bold text-4xl">
             {t('fantasyCollection.title')}
           </h2>
           <p className="text-center font-red-hat text-sm font-light md:text-base">
@@ -110,7 +110,7 @@ const MondialBlueHouse = () => {
       <div className="mb-5 flex flex-col items-center justify-center gap-y-5 md:mb-10 md:flex-row">
         <div className="order-1 flex flex-1 items-center justify-center px-4 md:order-none">
           <div className="gap- flex max-w-[400px] flex-col gap-y-5 md:gap-y-6">
-            <h2 className="text-center font-trajan-bold text-[32px]">
+            <h2 className="text-center font-trajan-bold text-4xl">
               {t('galaCollection.title')}
             </h2>
             <p className="text-center font-red-hat text-sm font-light md:text-base">
@@ -146,7 +146,7 @@ const MondialBlueHouse = () => {
         </div>
         <div className="order-1 flex flex-1 items-center justify-center px-4 md:order-none">
           <div className="gap- flex max-w-[400px] flex-col gap-y-5 md:gap-y-6">
-            <h2 className="text-center font-trajan-bold text-[32px]">
+            <h2 className="text-center font-trajan-bold text-4xl">
               {t('preciousStone.title')}
             </h2>
             <p className="text-center font-red-hat text-sm font-light md:text-base">

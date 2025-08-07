@@ -1,0 +1,46 @@
+{
+  "title": "High Jewelry",
+  "subtitle": "Our high jewelry collection represents the zenith of elegance and craftsmanship, designed for those who seek the extraordinary.",
+  "mecUltimate": {
+    "title": "MEC ULTIMATE",
+    "description": "Mondial Excellent Cut use the rarest diamonds to show the brightest light performance in diamond. We pick only exceptional grades of Brilliance, Fire, Sparkle and Light Symmetry in Sarine Light Performance Indicators to get the ultimate grade.",
+    "discoverMore": "DISCOVER MORE"
+  },
+  "brilliantRose": {
+    "title": "BRILLIANT ROSE",
+    "description": "Discover the 'Brilliant Rose' collection, where each piece captures the enchanting beauty of a blooming rose. Meticulously crafted with radiant diamonds and delicate designs, this collection embodies elegance, passion, and timeless romance. Perfect for those who appreciate the art of nature intertwined with the brilliance of fine jewelry.",
+    "seeCollection": "SEE COLLECTION"
+  },
+  "firemark": {
+    "title": "FIREMARK",
+    "description": "Discover the brilliance of the Firemark collection, where every piece radiates a fiery brilliance through its expertly cut diamonds. Each design is a testament to precision and passion, ensuring a sparkle that leaves a lasting impression. Let the Firemark collection ignite your style with unparalleled elegance and unmatched fire.",
+    "discoverMore": "DISCOVER MORE"
+  },
+  "preciousStoneSection": {
+    "title": "precious stone & fancy diamond",
+    "description": "Where vibrant gemstones meet the captivating sparkle of uniquely cut diamonds. Each piece in this collection is a masterpiece, blending the rich colors of rare stones with the sophisticated brilliance of fancy diamonds, creating jewelry that is as extraordinary as the moments it celebrates."
+  },
+  "categories": {
+    "preciousStone": {
+      "title": "PRECIOUS STONE",
+      "discoverMore": "DISCOVER MORE"
+    },
+    "fancyDesign": {
+      "title": "FANCY DESIGN",
+      "discoverMore": "DISCOVER MORE"
+    },
+    "fancyShapeDiamond": {
+      "title": "FANCY SHAPE DIAMOND",
+      "discoverMore": "DISCOVER MORE"
+    },
+    "fancyColorDiamond": {
+      "title": "FANCY COLOR DIAMOND",
+      "discoverMore": "DISCOVER MORE"
+    }
+  },
+  "expertSection": {
+    "title": "LEARN MORE FROM OUR DIAMOND EXPERT",
+    "description": "Work with our designers to create a piece that reflects your individuality. From selecting the perfect gemstone to the final polish, your bespoke journey begins here.",
+    "contactUs": "CONTACT US"
+  }
+}

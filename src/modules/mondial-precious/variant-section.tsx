@@ -79,7 +79,7 @@ const VariantSection = ({
             height={330}
           />
           <div className={textContainerClasses}>
-            <h2 className="text-center font-trajan-bold text-[32px] md:text-[40px]">
+            <h2 className="text-center font-trajan-bold text-4xl md:text-[40px]">
               {title}
             </h2>
 

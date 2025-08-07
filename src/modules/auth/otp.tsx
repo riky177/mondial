@@ -100,7 +100,7 @@ const OTP = () => {
     <div className="flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
       <div className="w-full max-w-[470px] space-y-8">
         <div className="py-8">
-          <h2 className="text-center text-2xl font-extrabold text-gray-900 md:text-[32px]">
+          <h2 className="text-center text-2xl font-extrabold text-gray-900 md:text-4xl">
             {t('title')}
           </h2>
           <p className="mt-4 text-center font-red-hat text-[14px] text-secondary md:text-[16px]">

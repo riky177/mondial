@@ -44,7 +44,7 @@ export const MENU: MenuType[] = [
   },
   {
     title: 'JEWELRY',
-    href: '/products/i-said-mondial',
+    href: '#',
     sub_menu: [
       {
         title: 'FEATURED COLLECTIONS',
@@ -102,7 +102,7 @@ export const MENU: MenuType[] = [
   },
   {
     title: 'ENGAGEMENT & BRIDAL',
-    href: '/products/i-said-mondial',
+    href: '#',
     sub_menu: [
       {
         title: 'WEDDINGS & ENGAGEMENTS',
@@ -115,7 +115,7 @@ export const MENU: MenuType[] = [
   },
   {
     title: 'GIFT IDEAS',
-    href: '/products/i-said-mondial',
+    href: '#',
     sub_menu: [
       {
         title: 'GIFT FOR...',
@@ -132,7 +132,7 @@ export const MENU: MenuType[] = [
   },
   {
     title: 'ALL ABOUT DIAMONDS',
-    href: '/products/i-said-mondial',
+    href: '#',
     sub_menu: [
       {
         title: 'DIAMOND EDUCATION',

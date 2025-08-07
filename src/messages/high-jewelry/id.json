@@ -1,0 +1,46 @@
+{
+  "title": "High Jewelry",
+  "subtitle": "Koleksi high jewelry kami mewakili puncak keanggunan dan keahlian, dirancang untuk mereka yang mencari hal luar biasa.",
+  "mecUltimate": {
+    "title": "MEC ULTIMATE",
+    "description": "Mondial Excellent Cut menggunakan berlian terjarang untuk menunjukkan performa cahaya paling terang dalam berlian. Kami memilih hanya tingkatan Brilliance, Fire, Sparkle dan Light Symmetry yang luar biasa dalam Indikator Performa Cahaya Sarine untuk mendapatkan tingkatan ultimate.",
+    "discoverMore": "TEMUKAN LEBIH LANJUT"
+  },
+  "brilliantRose": {
+    "title": "BRILLIANT ROSE",
+    "description": "Temukan koleksi 'Brilliant Rose', di mana setiap potongan menangkap keindahan mempesona mawar yang mekar. Dibuat dengan teliti dengan berlian bersinar dan desain halus, koleksi ini mewujudkan keanggunan, gairah, dan romansa abadi. Sempurna untuk mereka yang menghargai seni alam yang terjalin dengan kecemerlangan perhiasan halus.",
+    "seeCollection": "LIHAT KOLEKSI"
+  },
+  "firemark": {
+    "title": "FIREMARK",
+    "description": "Temukan kecemerlangan koleksi Firemark, di mana setiap potongan memancarkan kecemerlangan berapi-api melalui berlian yang dipotong dengan ahli. Setiap desain adalah bukti presisi dan gairah, memastikan kilau yang meninggalkan kesan abadi. Biarkan koleksi Firemark menyalakan gaya Anda dengan keanggunan yang tak tertandingi dan api yang tak tertandingi.",
+    "discoverMore": "TEMUKAN LEBIH LANJUT"
+  },
+  "preciousStoneSection": {
+    "title": "batu mulia & berlian fancy",
+    "description": "Di mana batu mulia bersemangat bertemu dengan kilau memikat berlian yang dipotong secara unik. Setiap potongan dalam koleksi ini adalah mahakarya, memadukan warna kaya batu langka dengan kecemerlangan canggih berlian fancy, menciptakan perhiasan yang luar biasa seperti momen yang dirayakannya."
+  },
+  "categories": {
+    "preciousStone": {
+      "title": "BATU MULIA",
+      "discoverMore": "TEMUKAN LEBIH LANJUT"
+    },
+    "fancyDesign": {
+      "title": "DESAIN FANCY",
+      "discoverMore": "TEMUKAN LEBIH LANJUT"
+    },
+    "fancyShapeDiamond": {
+      "title": "BERLIAN BENTUK FANCY",
+      "discoverMore": "TEMUKAN LEBIH LANJUT"
+    },
+    "fancyColorDiamond": {
+      "title": "BERLIAN WARNA FANCY",
+      "discoverMore": "TEMUKAN LEBIH LANJUT"
+    }
+  },
+  "expertSection": {
+    "title": "PELAJARI LEBIH LANJUT DARI AHLI BERLIAN KAMI",
+    "description": "Bekerja dengan desainer kami untuk menciptakan potongan yang mencerminkan individualitas Anda. Dari memilih batu mulia yang sempurna hingga poles akhir, perjalanan bespoke Anda dimulai di sini.",
+    "contactUs": "HUBUNGI KAMI"
+  }
+}

@@ -41,7 +41,7 @@ const TasselSection = () => {
             height={330}
           />
           <div className="mt-8 flex flex-col items-center justify-center gap-5">
-            <h2 className="text-center font-trajan-bold text-[32px] md:text-[40px]">
+            <h2 className="text-center font-trajan-bold text-4xl md:text-[40px]">
               {t('tasselTitle')}
             </h2>
             <p className="px-2 text-center font-montserrat text-sm font-light md:px-0 md:text-xl">

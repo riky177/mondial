@@ -31,13 +31,14 @@ const Menu = () => {
     <div className="relative mt-6 w-full" onMouseLeave={handleMouseLeave}>
       <div className="flex w-full items-center justify-center pb-2.5">
         {MENU.map((menu) => (
-          <div
+          <Link
+            href={menu.href}
             key={menu.title}
             className="underline-hover mx-7 cursor-pointer text-center font-trajan-bold text-xs text-tertiary"
             onMouseEnter={() => handleMouseEnter(menu.title)}
           >
             {getTranslatedTitle(t, menu.title)}
-          </div>
+          </Link>
         ))}
       </div>
       <div

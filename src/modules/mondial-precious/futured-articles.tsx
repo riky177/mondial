@@ -27,7 +27,7 @@ const FUTURED_ARTICLES_DATA = [
 const FuturedArticles = () => {
   return (
     <div className="container w-full">
-      <h2 className="mb-[30px] text-center font-trajan-bold text-[32px] uppercase md:mb-[50px] md:text-[40px]">
+      <h2 className="mb-[30px] text-center font-trajan-bold text-4xl uppercase md:mb-[50px] md:text-[40px]">
         Futured Articles
       </h2>
       <div className="flex w-full flex-col justify-center gap-5 md:flex-row">

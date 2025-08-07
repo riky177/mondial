@@ -7,7 +7,7 @@ const AllAboutDiamond = () => {
 
   return (
     <div className="mx-auto w-full max-w-[880px] px-4 py-10 pt-5 md:px-0">
-      <h2 className="my-2.5 w-full text-center text-[28px] md:text-left md:text-[32pxx]">
+      <h2 className="my-2.5 w-full text-center text-[28px] md:text-left md:text-4xl">
         {t('color.title')}
       </h2>
       <Image
@@ -26,7 +26,7 @@ const AllAboutDiamond = () => {
       <p className="mb-10 font-red-hat font-light text-[#333333]">
         {t('color.description3')}
       </p>
-      <h2 className="mb-2.5 w-full text-center text-[28px] md:text-left md:text-[32pxx]">
+      <h2 className="mb-2.5 w-full text-center text-[28px] md:text-left md:text-4xl">
         {t('clarity.title')}
       </h2>
       <p className="mb-5 font-red-hat font-light text-[#333333]">
@@ -44,7 +44,7 @@ const AllAboutDiamond = () => {
       />
       <div className="mb-5 flex flex-col justify-center md:flex-row">
         <div className="flex max-w-full flex-col md:max-w-[50%]">
-          <h2 className="mb-2.5 w-full text-center text-[28px] md:text-left md:text-[32pxx]">
+          <h2 className="mb-2.5 w-full text-center text-[28px] md:text-left md:text-4xl">
             {t('cut.title')}
           </h2>
           <p className="mb-5 font-red-hat font-light text-[#333333]">
@@ -62,7 +62,7 @@ const AllAboutDiamond = () => {
           className="h-auto w-full md:max-w-[50%]"
         />
       </div>
-      <h2 className="mb-2.5 w-full text-center text-[28px] md:text-left md:text-[32pxx]">
+      <h2 className="mb-2.5 w-full text-center text-[28px] md:text-left md:text-4xl">
         {t('caratWeight.title')}
       </h2>
       <p className="mb-5 font-red-hat font-light text-[#333333]">
