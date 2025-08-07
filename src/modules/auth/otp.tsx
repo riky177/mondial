@@ -4,6 +4,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react';
 
+import Spinner from '@/components/ui/spinner';
 import { useAuth } from '@/hooks/useAuth';
 
 const OTP = () => {
@@ -88,7 +89,11 @@ const OTP = () => {
   };
 
   if (!mounted) {
-    return <div>Loading...</div>;
+    return (
+      <div className="mx-auto flex items-center justify-center py-40">
+        <Spinner size="large" />
+      </div>
+    );
   }
 
   return (

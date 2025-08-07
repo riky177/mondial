@@ -7,7 +7,7 @@ import { GoChevronDown, GoChevronRight } from 'react-icons/go';
 import { LuPhone } from 'react-icons/lu';
 import { TbMail } from 'react-icons/tb';
 
-import Modal from '@/components/modal';
+import Modal from '@/components/ui/modal';
 import useModal from '@/hooks/useModal';
 
 import {
