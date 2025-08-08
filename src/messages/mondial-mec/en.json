@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "MEC ULTIMATE+",
+    "subtitle": "Beyond Excellent Cut, Excellent Symmetry and Excellent Polish.",
+    "seeOurCatalog": "See Our Catalog",
+    "watchVideo": "Watch Video"
+  },
+  "features": {
+    "first": {
+      "badge": "49 Quality Parameter",
+      "title": "The Chosen One of Hundreds",
+      "description1": "We carefully pick the rarest diamond to give you the maximum quality of light performance.",
+      "description2": "With our 49 parameter we ensure our all beyond Excellent Cut, Excellent Symmetry and Excellent Polish to cater with Mondial Excellent Cut Parameters."
+    },
+    "second": {
+      "badge": "ULTIMATE GRADE OF SARINE LIGHT PERFORMANCE INDICATORS",
+      "title": "The Utmost Diamond: First & Foremost of All",
+      "description1": "Mondial Excellent Cut use the rarest diamonds to show the brightest light performance in diamond.",
+      "description2": "We pick only exceptional grades of Brilliance, Fire, Sparkle and Light Symmetry in Sarine Light Performance Indicators to get the ultimate grade."
+    }
+  },
+  "products": {
+    "title": "FIND YOUR BRIGHTEST LIGHT DIAMONDS",
+    "subtitle": "Select from our Mondial Excellent Cut Ultimate collection",
+    "seeOurCatalog": "See Our Catalog",
+    "bookSchedule": "Book Schedule"
+  },
+  "certification": {
+    "badge": "CERTIFICATION",
+    "title": "Certified Quality & Light Performance",
+    "subtitle": "Our diamond have all beyond Excellent Cut, Excellent Symmetry and Excellent Polish to cater with Mondial Excellent Cut Parameters.",
+    "sarine": "Cutting-edge tech certification for Light Performance",
+    "gia": "Well Known Industry Gemologist Diamond Certification",
+    "verification": "Validating product based on the distributed certification"
+  },
+  "excellence": {
+    "title": "DIAMOND EXCELLENCE",
+    "subtitle": "See why Mondial Excellent Cut Ultimate is different",
+    "cutAndShape": {
+      "title": "CUT AND SHAPE",
+      "excellentCut": "Excellent Cut",
+      "excellentSymmetry": "Excellent Symmetry",
+      "excellentPolish": "Excellent Polish",
+      "noCulet": "No Culet"
+    },
+    "inclusion": {
+      "title": "INCLUSION",
+      "description": "No Inclusion to 7 Very Fine Inclusions"
+    },
+    "blemish": {
+      "title": "BLEMISH",
+      "description": "No Blemish to Very Fine Blemish"
+    },
+    "certificate": {
+      "title": "CERTIFICATE PERIOD",
+      "description": "Under 4 Years"
+    },
+    "seeOurCatalog": "See Our Catalog"
+  }
+}

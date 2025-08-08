@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "MEC ULTIMATE+",
+    "subtitle": "Melampaui Excellent Cut, Excellent Symmetry dan Excellent Polish.",
+    "seeOurCatalog": "Lihat Katalog Kami",
+    "watchVideo": "Tonton Video"
+  },
+  "features": {
+    "first": {
+      "badge": "49 Parameter Kualitas",
+      "title": "Yang Terpilih dari Ratusan",
+      "description1": "Kami dengan hati-hati memilih berlian terlangka untuk memberikan Anda kualitas maksimum performa cahaya.",
+      "description2": "Dengan 49 parameter kami memastikan semua melampaui Excellent Cut, Excellent Symmetry dan Excellent Polish untuk memenuhi Parameter Mondial Excellent Cut."
+    },
+    "second": {
+      "badge": "GRADE ULTIMATE DARI INDIKATOR PERFORMA CAHAYA SARINE",
+      "title": "Berlian Terbaik: Yang Pertama & Terdepan dari Semua",
+      "description1": "Mondial Excellent Cut menggunakan berlian terlangka untuk menunjukkan performa cahaya terbaik dalam berlian.",
+      "description2": "Kami hanya memilih grade luar biasa dari Brilliance, Fire, Sparkle dan Light Symmetry dalam Indikator Performa Cahaya Sarine untuk mendapatkan grade ultimate."
+    }
+  },
+  "products": {
+    "title": "TEMUKAN BERLIAN CAHAYA TERBAIK ANDA",
+    "subtitle": "Pilih dari koleksi Mondial Excellent Cut Ultimate kami",
+    "seeOurCatalog": "Lihat Katalog Kami",
+    "bookSchedule": "Buat Jadwal"
+  },
+  "certification": {
+    "badge": "SERTIFIKASI",
+    "title": "Kualitas & Performa Cahaya Bersertifikat",
+    "subtitle": "Berlian kami semuanya melampaui Excellent Cut, Excellent Symmetry dan Excellent Polish untuk memenuhi Parameter Mondial Excellent Cut.",
+    "sarine": "Sertifikasi teknologi canggih untuk Performa Cahaya",
+    "gia": "Sertifikasi Berlian Gemologi Industri yang Terkenal",
+    "verification": "Memvalidasi produk berdasarkan sertifikasi yang didistribusikan"
+  },
+  "excellence": {
+    "title": "KEUNGGULAN BERLIAN",
+    "subtitle": "Lihat mengapa Mondial Excellent Cut Ultimate berbeda",
+    "cutAndShape": {
+      "title": "POTONGAN DAN BENTUK",
+      "excellentCut": "Excellent Cut",
+      "excellentSymmetry": "Excellent Symmetry",
+      "excellentPolish": "Excellent Polish",
+      "noCulet": "Tanpa Culet"
+    },
+    "inclusion": {
+      "title": "INKLUSI",
+      "description": "Tanpa Inklusi hingga 7 Inklusi Sangat Halus"
+    },
+    "blemish": {
+      "title": "CACAT",
+      "description": "Tanpa Cacat hingga Cacat Sangat Halus"
+    },
+    "certificate": {
+      "title": "PERIODE SERTIFIKAT",
+      "description": "Di Bawah 4 Tahun"
+    },
+    "seeOurCatalog": "Lihat Katalog Kami"
+  }
+}

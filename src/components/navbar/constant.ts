@@ -35,7 +35,7 @@ export const MENU: MenuType[] = [
       {
         title: 'Branded Diamond & Pearl',
         detail_menu: [
-          { title: 'MAC ULTIMATE', href: '/products/mac-ultimate' },
+          { title: 'MAC ULTIMATE', href: '/mondial-mec' },
           { title: 'BERLIANT ROSE', href: '/products/berliant-rose' },
           { title: 'FIREMARK', href: '/products/firemark' },
         ],
